@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejajul Ansari | Portfolio</title>
-</head>
-<body>
-    <h1>Hello from Ejajul Ansari</h1>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <header>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav id="nav-menu">
+        <ul>
+          <li class="nav-link home">Home</li>
+          <li class="nav-link about">About</li>
+          <li class="nav-link skills">Skills</li>
+          <li class="nav-link projects">Projects</li>
+          <li class="nav-link contact">Contact</li>
+          <li class="nav-link resume resume-not">
+            <a
+              href="https://drive.google.com/file/d/11abgEXbOijzPC4dn55ibs7IwFiXKgnXU/view?usp=sharing"
+              target="_blank"
+              id="resume-link-2"
+              class="resume-link"
+              ><button>Resume</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home">
+      <!-- Image Section -->
+      <div>
+        <img
+          src="https://avatars.githubusercontent.com/u/112761880?v=4"
+          class="home-img"
+          alt="image"
+        />
+      </div>
+
+      <!-- Personal Details section -->
+      <div>
+        <p>Hi, my name is</p>
+        <h1 id="user-detail-name">Ejajul Ansari</h1>
+        <h2 id="user-detail-intro">Full Stack Web Developer</h2>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="aboutsection">
+      <div>
+        <h1>Ａｂｏｕｔ　Ｍｅ</h1>
+      </div>
+      <br />
+      <div id="aboutText">
+        <div id="aboutText-text">
+          <p>
+            Dedicated and Eager to apply new concepts and maximization skills in
+            any project. Specialty in Backend especially in NodeJS, ExpressJS,
+            and MongoDB. Uses Industry level best practices.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://cdni.iconscout.com/illustration/premium/thumb/coder-3462295-2895977.png"
+            class="home-img coder-img"
+            alt="image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills">
+      <div class="skills-card">
+        <img src="" class="skills-card-img" alt="" />
+        <h1 class="skills-card-name"></h1>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+      <div class="project-card">
+        <img src="" alt="" />
+        <h2 class="project-title"></h2>
+        <p class="project-description"></p>
+        <p class="project-tech-stack"></p>
+        <a href="" class="project-github-link"></a>
+        <a href="" class="project-deployed-link"></a>
+      </div>
+      <div class="project-card"></div>
+      <div class="project-card"></div>
+      <div class="project-card"></div>
+
+      <!-- Resume in Projects Section -->
+      <a
+        href="https://drive.google.com/file/d/11abgEXbOijzPC4dn55ibs7IwFiXKgnXU/view?usp=sharing"
+        target="_blank"
+        id="resume-link-1"
+        class="resume-link"
+        ><button>Resume</button></a
+      >
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <a href="" id="contact-github"></a>
+      <a href="" id="contact-linkedin"></a>
+      <a href="" id="contact-phone"></a>
+      <a href="" id="contact-email"></a>
+    </div>
+  </body>
 </html>

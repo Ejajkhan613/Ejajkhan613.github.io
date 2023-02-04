@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejajul Ansari | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
   <body>
     <!-- Nav Section -->
@@ -13,11 +17,12 @@
       <input type="checkbox" id="nav_check" hidden />
       <nav id="nav-menu">
         <ul>
-          <li class="nav-link home">Home</li>
-          <li class="nav-link about">About</li>
-          <li class="nav-link skills">Skills</li>
-          <li class="nav-link projects">Projects</li>
-          <li class="nav-link contact">Contact</li>
+          <li class="nav-link home"><a href="#home">Home</a></li>
+          <li class="nav-link about"><a href="#about">About</a></li>
+          <li class="nav-link skills"><a href="#skills-title">Skills</a></li>
+          <li class="nav-link projects"><a href="#project-title">Projects</a></li>
+          <li class="nav-link projects"><a href="#stats">Stats</a></li>
+          <li class="nav-link contact"><a href="#contact">Contact</a></li>
           <li class="nav-link resume resume-not">
             <a
               href="https://drive.google.com/file/d/11abgEXbOijzPC4dn55ibs7IwFiXKgnXU/view?usp=sharing"
@@ -57,9 +62,7 @@
 
     <!-- About Section -->
     <div id="about" class="aboutsection">
-      <div>
-        <h1>Ａｂｏｕｔ　Ｍｅ</h1>
-      </div>
+      <h1>About Me</h1>
       <br />
       <div id="aboutText">
         <div id="aboutText-text">
@@ -80,28 +83,439 @@
     </div>
 
     <!-- Skills Section -->
+    <br /><br />
+    <hr />
+    <h1 id="skills-title">Skills</h1>
+    <h2 id="skills-category">------Frontend------</h2>
     <div id="skills">
       <div class="skills-card">
-        <img src="" class="skills-card-img" alt="" />
-        <h1 class="skills-card-name"></h1>
+        <img
+          height="180px"
+          src="https://camo.githubusercontent.com/bfa71fe5e1eb3ca57a7e4ef9c6b2ca21414c4fdab27ac6861e211e7cfe8f7d9f/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f68746d6c352d6f726967696e616c2d776f72646d61726b2e737667"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">HTML</h1>
+      </div>
+      <div class="skills-card">
+        <img
+          height="180px"
+          src="https://camo.githubusercontent.com/1f14c9c472b21cf8790a4fb6914be3a3181e957ecc2b397775f06a989d20cb37/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f637373332d6f726967696e616c2d776f72646d61726b2e737667"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">CSS</h1>
+      </div>
+      <div class="skills-card">
+        <img
+          height="180px"
+          width="130px"
+          src="https://camo.githubusercontent.com/7a2b6137fa6818b1c85f86347a6b4a75ee52681d4a190c506df972e3c5459980/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6a6176617363726970742d6f726967696e616c2e737667"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">JavaScript</h1>
+      </div>
+      <div class="skills-card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+          height="180px"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">Figma</h1>
+      </div>
+      <div class="skills-card">
+        <img
+          src="https://images.indepth.dev/images/2020/10/Exploring-Angular-DOM-manipulation-techniques-using-ViewContainerRef-white.png"
+          height="130px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br />
+        <h1 class="skills-card-name">DOM Manipulation</h1>
+      </div>
+      <div class="skills-card">
+        <img
+          src="https://t3.ftcdn.net/jpg/05/39/18/70/360_F_539187069_xQVUPyrdSRrTDo01yvzmpcqpEICwk2Fa.jpg"
+          height="160px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br />
+        <h1 class="skills-card-name">API's</h1>
+      </div>
+      <div class="skills-card">
+        <img
+          src="https://i.workana.com/wp-content/uploads/2019/09/responsive-design-glosario-workana-300x159.jpg"
+          height="100px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br /><br />
+        <h1 class="skills-card-name">Responsive Design</h1>
+      </div>
+    </div>
+
+    <!-- Backend Skills -->
+    <br /><br />
+    <h2 id="skills-category">------Backend------</h2>
+    <div id="skills">
+      <div class="skills-card">
+        <img
+          height="180px"
+          width="130px"
+          src="https://camo.githubusercontent.com/7a2b6137fa6818b1c85f86347a6b4a75ee52681d4a190c506df972e3c5459980/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6a6176617363726970742d6f726967696e616c2e737667"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">JavaScript</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://camo.githubusercontent.com/e643754982a9dba595811285c08c4667f1062a17d9e7eca8dd16b43995bf372b/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d6f6e676f64622d6f726967696e616c2d776f72646d61726b2e737667"
+          height="180px"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">MongoDB</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://camo.githubusercontent.com/48c9507b62d83559dc3aef4f3951293b15ab2f5fa1029bdf6ec42f9fa062e775/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6e6f64656a732d6f726967696e616c2d776f72646d61726b2e737667"
+          height="180px"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">Node JS</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ18v7qjb95jfqfBueH0PMFkla_3cPQQORDPL_pkACa7Z1IpqKY-8fkvEv75YiV5cwwRXE&usqp=CAU"
+          height="150px"
+          width="190px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br />
+        <h1 class="skills-card-name">Express JS</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://www.pngitem.com/pimgs/m/385-3851477_mongoose-js-logo-png-transparent-png.png"
+          height="120px"
+          width="190px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br /><br /><br />
+        <h1 class="skills-card-name">Mongoose JS</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://thumbs.dreamstime.com/b/data-aggregation-linear-icon-modern-outline-data-aggregation-lo-data-aggregation-linear-icon-modern-outline-data-aggregation-logo-133520346.jpg"
+          height="140px"
+          width="190px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br /><br />
+        <h1 class="skills-card-name">Aggregation</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://media.istockphoto.com/id/953839310/vector/cloud-data-storage-and-cloud-storage-concept-landing-page-template-3d-isometric-vector.jpg?s=612x612&w=0&k=20&c=k2LEBHOIbAdWbIxTR59XR1hGLPFXkQ--tI_lkWF4zbQ="
+          height="150px"
+          width="190px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br />
+        <h1 class="skills-card-name">Server Handling</h1>
+      </div>
+    </div>
+
+    <!-- Additional Skills -->
+    <br /><br />
+    <h2 id="skills-category">--Important Skills--</h2>
+    <div id="skills">
+      <div class="skills-card">
+        <img
+          height="150px"
+          width="160px"
+          src="https://4.bp.blogspot.com/-YKSlSfmPPEY/V-prUVc9p2I/AAAAAAAABJA/cSXXo3J8Jb8xjbqVx-S88WIZ_lqvVXNHgCLcB/s1600/Data-Structures-Interview-Questions-with-Answers.png"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br />
+        <h1 class="skills-card-name">DSA</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://cdn.vectorstock.com/i/preview-1x/35/56/problem-solving-icon-monochrome-simple-life-vector-45093556.jpg"
+          height="160px"
+          class="skills-card-img"
+          alt=""
+        />
+        <h1 class="skills-card-name">Problem Solving</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAbFBMVEX///8XFRUAAAAUEhL39/cPDAwSDw+1tbX8/PylpaW4uLjj4+Px8fEFAADGxsZnZ2c5ODgvLi7a2tpWVlaamZnp6emtrKzAwMBFRUXT09OUlJSBgIBfXl4gHx9BQEA0MzMnJiZ0dHROTU2Li4tom648AAADoklEQVRoge1YybKjMAwMMjZLIEBYEkJW8v//OMZsNmAj8t7UHCZ9SlWkLllIbcm73RdffPHFP4N9PF1eUcoRvS7+0f495r1X34AjpBxh8+tWe/vfYA68GIASSwGhAImX/5S6CoFai2AA1U/o7QqALFOL+Dl98Cm3Y4GeuQWw4rOwr8DWuJvo0w+CL9fD7oKn5VZuBxN2CwYbU5Mhw+6Cz/4eN2e/4Lm9jdxbYj9t5ubsJxz3vm8c3iShoYe4ARca1tseUeRJ1+/kVmQR6Lrfsri+RJci6dhpguF+90kRX8n17wM9IYyR/igMYsfdSd8HqnXuckg4dM1xeECjUhzW82mJH9SC5NQncWpvQDykAYYrIYPHuyjzwOYI8rJ4x3Bxu//cQdrWE+MMgbDEXTMWOI/RrHXqGDi9o7h3KcWG448ljiWvx3ICx2h5Hy0Jw6UlGRWOxibDvdybgLrEAsXF1ElvxRKlpL7iYqr1hyTi9ImaTtx7OPowQzUe0UeUkMt3uMFJllpMN7eQcwme1iySTgjoe9eWQg8jrZmU8vCK5d7tXmPo+qTb8vk2XLpywYCuCuQqx37OmZ9uQD2MRgTXQS0Ca0w6HDRGhUR+2zBHuZICaNPp/Qa5rhZlcmsDub2V/OOcI8g/rxYduSMb6b76AkrZT3dfHGSjD6c/bVC5ZERTPLkiSbpvZSuKi941XUVztW7SDWoSzwnkT2W41SV5M14qKmI5pBcqBvTIXShO+uFCufyRQ/Fe2VS1osjxkOdlxhASENxkF/owmKq7ELVWYz8q3OZUdpXerxR0Le/ZZDUwK1La9ANJMu8K4heQQpuboCCTl4HQ3HlCAWhzOecptIeg12IhO2VxpbNHhzVBEtM2RE24XdUT8XyjLGsn8bQz28Xo2czdiReETUmNDQuTQSNaXCbXlVRknRdKIJfwtHz3S+QrGW/9BCM0o1PRsc/PW88XSGJqoB5drYvdzG9ezXjOZ4rxnoeOk4taOLZTX5Bd67Sa59KZkUON4ea7Als9pT8lZ9jB9ShSTWPDTjQlx67+u/7ZAs76YKbk2EeLBo6IPYRqL6K3Z3eXSk5WdsRZ7EQ4wTONrvXc11eVf0PcDQ7QXumMhiEFf/q3XC3hlhmnRR6P/kZyiD95dK0GsZ6nZSCn+MVMRRl37a8lJxBvfrEcULRvWBpyBlufKyfwnly4l8i5zD/Rc5MWhwjOszq3zxBtrpFFLMoA7r3kiy+++E/xB7JZJUQkJJhjAAAAAElFTkSuQmCC"
+          height="170px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br />
+        <h1 class="skills-card-name">Github</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYM0GVEWeNt9ixWCPl1GWbUG_3t5DvIJxdgm8krFWj0oW6MU_qzL5h&usqp=CAE&s"
+          height="130px"
+          width="150px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br /><br />
+        <h1 class="skills-card-name">Netlify</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://img.freepik.com/premium-vector/teamwork-people-are-meeting-groups-abstract-people-logo-team-work_29120-269.jpg?w=2000"
+          height="150px"
+          width="190px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br />
+        <h1 class="skills-card-name">Team Work</h1>
+      </div>
+
+      <div class="skills-card">
+        <img
+          src="https://media.istockphoto.com/id/1160388429/vector/self-learning-concept-trendy-icon-simple-line-colored-illustration.jpg?s=170667a&w=0&k=20&c=VFNy6lst2TgjeJuQyZ0uDxo4e6XE9Z4Bd7ZfIE6dfj0="
+          height="150px"
+          width="190px"
+          class="skills-card-img"
+          alt=""
+        />
+        <br /><br /><br />
+        <h1 class="skills-card-name">Self Learning</h1>
+      </div>
+
+      <!-- For Auto Typing -->
+      <div class="skills-card">
+        <br /><br /><br /><br />
+        <h2>
+          and also
+          <p id="auto-type"></p>
+        </h2>
       </div>
     </div>
 
     <!-- Projects Section -->
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <hr />
+    <h1 id="project-title">Checkout My Projects</h1>
     <div id="projects">
+      <!-- 1st Project -->
       <div class="project-card">
-        <img src="" alt="" />
-        <h2 class="project-title"></h2>
-        <p class="project-description"></p>
-        <p class="project-tech-stack"></p>
-        <a href="" class="project-github-link"></a>
-        <a href="" class="project-deployed-link"></a>
-      </div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
+        <video
+          src="https://user-images.githubusercontent.com/112761880/216759468-65007752-10cf-4dbe-8cf3-89969df903da.mp4"
+          muted
+          class="vid"
+          loop
+        ></video>
+        <h2 class="project-title">Yummy Pizza</h2>
+        <p class="project-description">
+          It is a Pizza ordering website where customers can buy different
+          categories of pizza's.
+        </p>
+        <br /><br />
+        <p class="project-tech-stack">
+          <span>Tech Stack Used</span> HTML | CSS | JavaScript | NodeJS |
+          ExpressJS | MongoDB
+        </p>
+        <br />
+        <hr />
+        <br />
+        <!-- Github Link -->
+        <a
+          target="_blank"
+          href="https://github.com/Ejajkhan613/star-theory-7179"
+          class="project-github-link"
+          >Github Codebase -></a
+        >
 
-      <!-- Resume in Projects Section -->
+        <!-- Deployment Link -->
+        <a
+          href="https://yummypizza-delivering-smile.netlify.app/"
+          target="_blank"
+          class="project-deployed-link"
+          >Netlify Deployment -></a
+        >
+
+        <!-- Demo Link -->
+        <a
+          href="https://drive.google.com/file/d/1DHf7wLBGXYMDkl-Eye32NGaF_ukuPeXM/view?usp=sharing"
+          target="_blank"
+          class="project-presentation"
+          >Presentation video -></a
+        >
+      </div>
+
+      <!-- 2nd Project -->
+      <div class="project-card">
+        <video
+          src="https://user-images.githubusercontent.com/112761880/216763425-cc529c27-c0c7-4f36-b5aa-d94ae01cc8f8.mp4"
+          muted
+          class="vid"
+          loop
+        ></video>
+        <h2 class="project-title">Edge Tech</h2>
+        <p class="project-description">
+          It is a CRM based Web Application where companies can manage their
+          customers. This is a Collaborative Project
+        </p>
+        <br />
+        <p class="project-tech-stack">
+          <span>Tech Stack Used</span> HTML | CSS | JavaScript | Mock API
+        </p>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <!-- Github Link -->
+        <a
+          target="_blank"
+          href="https://github.com/MalikRehan-M/arrogant-change-8923"
+          class="project-github-link"
+          >Github Codebase -></a
+        >
+
+        <!-- Deployment Link -->
+        <a
+          href="https://cosmic-sprinkles-6ae42e.netlify.app/"
+          target="_blank"
+          class="project-deployed-link"
+          >Netlify Deployment -></a
+        >
+
+        <!-- Demo Link -->
+        <a
+          href="https://drive.google.com/file/d/14yPuWNsxs6qntrezYBc6jNAsJunAo-dX/view?usp=sharing"
+          target="_blank"
+          class="project-presentation"
+          >Presentation video -></a
+        >
+      </div>
+      <!-- 3rd Project -->
+      <div class="project-card">
+        <video
+          src="https://user-images.githubusercontent.com/112761880/216759468-65007752-10cf-4dbe-8cf3-89969df903da.mp4"
+          muted
+          class="vid"
+          loop
+        ></video>
+        <h2 class="project-title">Yummy Pizza</h2>
+        <p class="project-description">
+          It is a Pizza ordering website where customers can buy different
+          categories of pizza's.
+        </p>
+        <br /><br />
+        <p class="project-tech-stack">
+          <span>Tech Stack Used</span> HTML | CSS | JavaScript | NodeJS |
+          ExpressJS | MongoDB
+        </p>
+        <br />
+        <hr />
+        <br />
+        <!-- Github Link -->
+        <a
+          target="_blank"
+          href="https://github.com/Ejajkhan613/star-theory-7179"
+          class="project-github-link"
+          >Github Codebase -></a
+        >
+
+        <!-- Deployment Link -->
+        <a
+          href="https://yummypizza-delivering-smile.netlify.app/"
+          target="_blank"
+          class="project-deployed-link"
+          >Netlify Deployment -></a
+        >
+
+        <!-- Demo Link -->
+        <a
+          href="https://drive.google.com/file/d/1DHf7wLBGXYMDkl-Eye32NGaF_ukuPeXM/view?usp=sharing"
+          target="_blank"
+          class="project-presentation"
+          >Presentation video -></a
+        >
+      </div>
+
+      <!-- 4th Project -->
+      <div class="project-card">
+        <video
+          src="https://user-images.githubusercontent.com/112761880/216763425-cc529c27-c0c7-4f36-b5aa-d94ae01cc8f8.mp4"
+          muted
+          class="vid"
+          loop
+        ></video>
+        <h2 class="project-title">Edge Tech</h2>
+        <p class="project-description">
+          It is a CRM based Web Application where companies can manage their
+          customers. This is a Collaborative Project
+        </p>
+        <br />
+        <p class="project-tech-stack">
+          <span>Tech Stack Used</span> HTML | CSS | JavaScript | Mock API
+        </p>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <!-- Github Link -->
+        <a
+          target="_blank"
+          href="https://github.com/MalikRehan-M/arrogant-change-8923"
+          class="project-github-link"
+          >Github Codebase -></a
+        >
+
+        <!-- Deployment Link -->
+        <a
+          href="https://cosmic-sprinkles-6ae42e.netlify.app/"
+          target="_blank"
+          class="project-deployed-link"
+          >Netlify Deployment -></a
+        >
+
+        <!-- Demo Link -->
+        <a
+          href="https://drive.google.com/file/d/14yPuWNsxs6qntrezYBc6jNAsJunAo-dX/view?usp=sharing"
+          target="_blank"
+          class="project-presentation"
+          >Presentation video -></a
+        >
+      </div>
+    </div>
+
+    <!-- Resume Section -->
+    <div id="resume-section">
+      <h1>Download or Check my Resume</h1>
       <a
         href="https://drive.google.com/file/d/11abgEXbOijzPC4dn55ibs7IwFiXKgnXU/view?usp=sharing"
         target="_blank"
@@ -112,11 +526,119 @@
     </div>
 
     <!-- Contact Section -->
-    <div id="contact">
-      <a href="" id="contact-github"></a>
-      <a href="" id="contact-linkedin"></a>
-      <a href="" id="contact-phone"></a>
-      <a href="" id="contact-email"></a>
+    <div id="stats">
+      <h1>Stats</h1>
+      <!--Git Status -->
+      <!-- <div id="">
+        <p align="center">
+          <a href="https://github.com/ryo-ma/github-profile-trophy"
+            ><img
+              src="https://github-profile-trophy.vercel.app/?username=Ejajkhan613"
+              alt="Ejajkhan613"
+          /></a>
+        </p>
+      </div> -->
+
+      <div id="github-top-langs">
+        <p align="center">
+          <img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=Ejajkhan613&show_icons=true&locale=en&layout=compact"
+            alt="Ejajkhan613"
+          />
+        </p>
+      </div>
+
+      <div id="github-stats-card">
+        <p align="center">
+          &nbsp;<img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api?username=Ejajkhan613&show_icons=true&locale=en"
+            alt="Ejajkhan613"
+          />
+        </p>
+      </div>
+
+      <div id="github-streak-stats">
+        <p align="center">
+          <img
+            align="center"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=Ejajkhan613&theme=prussian"
+            alt="Ejajkhan613"
+          />
+        </p>
+      </div>
+
+      <div class="calendar react-activity-calendar"">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
     </div>
+
+
+
+
+    <!-- Contacts Section -->
+    <div id="contact">
+      <h1>Contact Details</h1>
+      <a href="https://github.com/Ejajkhan613" target="_blank" id="contact-github"><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg> Github</button></a>
+      <a href="www.linkedin.com/in/ejajul-ansari" target="_blank" id="contact-linkedin"><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg> Linkedin</button></a>
+      <a href="tel:+919891640628" id="contact-phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </svg> 9891640628</a>
+      <a href="mailto:ejajul.masai@gmail.com" id="contact-email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper" viewBox="0 0 16 16">
+        <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"/>
+      </svg> ejajul.masai@gmail.com</a>
+    </div>
+
+    <!-- For auto Typing -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- For Github Calender -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   </body>
 </html>
+
+<script>
+  var typed = new Typed("#auto-type", {
+    strings: ["Communication Skills", "Remote Work", "Collaboration"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+  });
+
+  // video play on hover
+  let playing = document.querySelectorAll(".vid");
+
+  for (let play of playing) {
+    play.addEventListener("mouseover", function (e) {
+      play.play();
+    });
+
+    var vid = document.querySelector(".project-card>video");
+    play.playbackRate = 0.5;
+
+    play.addEventListener("mouseout", function (e) {
+      play.pause();
+    });
+  }
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "Ejajkhan613", { responsive: true });
+
+
+  // Smooth drop
+  document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+    anchor.addEventListener("click", function (e){
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      })
+    })
+  })
+</script>

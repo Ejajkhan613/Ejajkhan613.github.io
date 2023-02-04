@@ -1,0 +1,23 @@
+{
+  "name": "ejajkhan613.github.io",
+  "version": "1.0.0",
+  "description": "- working on Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ejajkhan613/Ejajkhan613.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ejajkhan613/Ejajkhan613.github.io/issues"
+  },
+  "homepage": "https://github.com/Ejajkhan613/Ejajkhan613.github.io#readme",
+  "dependencies": {
+    "github-calendar": "^2.3.2"
+  }
+}

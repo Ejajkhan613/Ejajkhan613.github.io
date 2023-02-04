@@ -35,17 +35,21 @@ ul {
 
 .nav-link {
 	display: inline-flex;
-	font-size: 20px;
+}
+
+.nav-link > a {
+	text-decoration: none;
+	font-size: 22px;
 	margin: 0 10px;
 	color: #ffffff;
-	font-weight: 600;
 	cursor: pointer;
 	padding: 8px 18px;
 	transition: 0.2s;
 	border-radius: 30px;
+	font-weight: 600;
 }
 
-.nav-link:not(:last-child):hover {
+.nav-link:not(:last-child) > a:hover {
 	color: black;
 	background-color: #ffffff;
 }
@@ -193,10 +197,11 @@ ul {
 
 
 
-#about>div>h1 {
+#about>h1 {
 	font-size: 35px;
 	text-align: center;
 	background-color: #6698e4;
+	letter-spacing: 10px;
 	border-radius: 10px;
 }
 
@@ -222,8 +227,242 @@ ul {
 
 
 
+/* Skills Section */
+#skills-title {
+	color: #5a95ec;
+	font-size: 40px;
+}
+
+#skills-category {
+	color: #CCD6F6;
+	font-size: 26px;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+#skills {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.skills-card {
+	width: 200px;
+	height: 250px;
+	border: 1px solid #8aa0eb;
+	text-align: center;
+	color: white;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.skills-card:hover {
+	border-color: 3px solid #CCD6F6;
+	background-color: #8aa0eb;
+	transition: 0.3s;
+}
+
+#skills>h2 {
+	color: #CCD6F6;
+}
 
 
+
+
+
+
+
+
+/* Projects Section */
+#project-title {
+	color: #CCD6F6;
+	text-align: right;
+	margin-right: 100px;
+	font-size: 40px;
+}
+
+#projects {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+}
+
+.project-card {
+	width: 360px;
+	padding: 10px;
+	margin: 12px;
+	border: 1px solid #CCD6F6;
+	border-radius: 7px;
+	height: fit-content;
+}
+
+.project-card>video {
+	border-radius: 5px;
+	width: 360px;
+}
+
+.project-title {
+	color: #CCD6F6;
+	text-align: center;
+	font-size: 30px;
+}
+
+.project-description {
+	color: white;
+	font-size: 19px;
+	text-align: justify;
+}
+
+.project-tech-stack>span {
+	color: black;
+	padding: 2px 10px;
+	font-family: 'Courier New', Courier, monospace;
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: 600;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.project-tech-stack {
+	color: aqua;
+	text-align: center;
+	font-size: 17px;
+}
+
+.project-github-link {
+	color: #CCD6F6;
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	/* text-decoration: none; */
+}
+
+.project-deployed-link {
+	color: #CCD6F6;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	/* text-decoration: none; */
+}
+
+.project-presentation {
+	color: #CCD6F6;
+	text-align: center;
+	display: block;
+	font-size: 20px;
+}
+
+
+
+
+/* Resume Section */
+#resume-section {
+	width: 100%;
+	border-top: 3px solid #8aa0eb;
+}
+
+#resume-section>h1 {
+	font-size: 40px;
+	color: #CCD6F6;
+	margin: 50px;
+}
+
+#resume-section>a {
+	text-align: center;
+	display: block;
+}
+
+#resume-section>a>button {
+	padding: 30px 100px;
+}
+
+
+
+
+/* Github Stats */
+#stats {
+	margin-top: 100px;
+	border-top: 3px solid #909dc5;
+	padding: 20px 0px;
+}
+
+#stats>h1 {
+	color: #CCD6F6;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+#stats>div>p>img {
+	display: block;
+	margin: 10px;
+	width: 500px;
+	margin-bottom: 50px;
+}
+
+#contact {
+	margin-top: 100px;
+}
+
+.calendar {
+	background-color: white;
+	width: 100%;
+	padding: 20px 10px;
+}
+
+
+/* Contact Details */
+#contact {
+	width: 100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#contact>h1 {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	background-color: #7e90c9;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+#contact>a {
+	font-size: 30px;
+	text-decoration: none;
+	display: block;
+	color: #CCD6F6;
+	/* border: 2px solid red; */
+	margin: 10px;
+}
+
+#contact>a>button {
+	cursor: pointer;
+	background-color: transparent;
+	color: #CCD6F6;
+	transition: 0.3s;
+	width: 150px;
+	height: 80px;
+	font-size: 20px;
+	padding: 10px;
+	border: 1px solid turquoise;
+	border-radius: 5px;
+}
+
+#contact>a>button:hover {
+	background-color: #2b6fd4;
+}
 
 
 @media only screen and (max-width: 870px) {
@@ -270,6 +509,38 @@ ul {
 
 	#aboutText-text {
 		width: 100%;
+	}
+
+	#projects {
+		width: fit-content;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 100px;
+	}
+
+
+	.project-card {
+		width: 300px;
+		margin: auto;
+		margin-bottom: 18px;
+		border: 1px solid #CCD6F6;
+		border-radius: 7px;
+		height: fit-content;
+	}
+
+	.project-card>video {
+		border-radius: 5px;
+		width: 300px;
+	}
+
+
+
+
+	#stats>div>p>img {
+		display: block;
+		margin-bottom: 80px;
+		width: 400px;
 	}
 }
 
@@ -322,5 +593,18 @@ ul {
 
 	#aboutText-text {
 		width: 100%;
+	}
+
+
+	#contact>a {
+		font-size: 20px;
+		text-decoration: none;
+		display: block;
+		color: #CCD6F6;
+		margin: 10px;
+	}
+
+	#stats>div>p>img {
+		width: 300px;
 	}
 }

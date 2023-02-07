@@ -185,6 +185,12 @@ ul {
 	margin: 5px 0px;
 }
 
+#home > div > .full {
+	font-size: 45px;
+	margin-top: 10px;
+	color: #909dc5;
+}
+
 
 
 
@@ -432,6 +438,7 @@ ul {
 }
 
 
+
 /* Contact Details */
 #contact {
 	width: 100%;
@@ -516,6 +523,11 @@ ul {
 	#aboutText>div {
 		margin: auto;
 		text-align: center;
+	}
+
+	#home > div > h2 {
+		color: white;
+		font-size: 40px;
 	}
 
 	#aboutText-text-div {

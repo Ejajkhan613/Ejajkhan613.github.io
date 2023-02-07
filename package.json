@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/Ejajkhan613/Ejajkhan613.github.io/issues"
   },
-  "homepage": "https://github.com/Ejajkhan613/Ejajkhan613.github.io#readme",
-  "dependencies": {
-    "github-calendar": "^2.3.2"
-  }
+  "homepage": "https://github.com/Ejajkhan613/Ejajkhan613.github.io#readme"
 }

@@ -12,7 +12,7 @@ document.querySelector(".resume-not").addEventListener("click", () => {
   window.open("./Ejajul_Ansari_Resume.pdf")
 });
 
-document.querySelector("#resume-link-2").addEventListener("click", () => {
+document.querySelector("#resume-button-2").addEventListener("click", () => {
   window.open("./Ejajul_Ansari_Resume.pdf")
 });
 

@@ -11,8 +11,7 @@ var typed = new Typed("#auto-type", {
 document.querySelector(".resume-not").addEventListener("click", () => {
   window.open("./Ejajul_Ansari_Resume.pdf")
 });
-
-document.querySelector("#resume-button-2").addEventListener("click", () => {
+document.querySelector(".secondResume").addEventListener("click", () => {
   window.open("./Ejajul_Ansari_Resume.pdf")
 });
 

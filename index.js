@@ -8,7 +8,7 @@ var typed = new Typed("#auto-type", {
 
 
 // Create a link element
-document.querySelector(".resume-not").addEventListener("click", () => {
+document.querySelector(".resume").addEventListener("click", () => {
   window.open("./Ejajul_Ansari_Resume.pdf")
 });
 document.querySelector("#about>a").addEventListener("click", () => {

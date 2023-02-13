@@ -1,10 +1,10 @@
-// Auto Typing
-var typed = new Typed("#auto-type", {
-  strings: ["Communication Skills", "Remote Work", "Collaboration"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true
-});
+// // Auto Typing
+// var typed = new Typed("#auto-type", {
+//   strings: ["Communication Skills", "Remote Work", "Collaboration"],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   loop: true
+// });
 
 
 // Create a link element

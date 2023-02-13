@@ -148,7 +148,8 @@ ul {
 /* Home Section */
 #home {
 	width: 100%;
-	margin-top: 200px;
+	margin-top: 0px;
+	padding-top: 180px;
 	height: fit-content;
 	display: flex;
 }
@@ -197,6 +198,7 @@ ul {
 /* About Section */
 #about {
 	width: 100%;
+	padding-top: 180px;
 	height: fit-content;
 	margin-top: 100px;
 }
@@ -246,9 +248,14 @@ ul {
 	text-align: center;
 }
 
+#makeTop{
+	width: 100%;
+}
+
 #skills {
 	width: 100%;
 	display: flex;
+	padding-top: 100px;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
@@ -294,6 +301,7 @@ ul {
 #projects {
 	width: 100%;
 	display: flex;
+	padding-top: 100px;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 100px;
@@ -410,7 +418,7 @@ ul {
 #stats {
 	margin-top: 100px;
 	border-top: 3px solid #909dc5;
-	padding: 20px 0px;
+	padding: 100px 0px;
 }
 
 #stats>h1 {

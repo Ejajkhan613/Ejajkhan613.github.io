@@ -1,19 +1,19 @@
 // // Auto Typing
-// var typed = new Typed("#auto-type", {
-//   strings: ["Communication Skills", "Remote Work", "Collaboration"],
-//   typeSpeed: 100,
-//   backSpeed: 100,
-//   loop: true
-// });
+var typed = new Typed("#auto-type", {
+  strings: ["Communication Skills", "Remote Work", "Collaboration"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true
+});
 
 
 // Create a link element
 document.querySelector(".resume").addEventListener("click", () => {
   window.open("./Ejajul_Ansari_Resume.pdf")
 });
-// document.getElementById(".second").addEventListener("click", () => {
-//   window.open("./Ejajul_Ansari_Resume.pdf")
-// });
+document.querySelector(".downloadSecondPortfolio").addEventListener("click", () => {
+  window.open("./Ejajul_Ansari_Resume.pdf")
+});
 
 
 
@@ -43,9 +43,9 @@ GitHubCalendar(".calendar", "Ejajkhan613", { responsive: true });
 
 
 // Smooth drop
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth"})
-//   })
-// })
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth"})
+  })
+})

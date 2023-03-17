@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejajul Ansari | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/IMG_1879[165] (2).JPG">
+    <link rel="icon" type="image/x-icon" href="/IMG_1879[165] (2).JPG" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -24,15 +24,17 @@
           <a class="nav-link projects" href="#projects">Projects</a>
           <a class="nav-link" href="#stats">Stats</a>
           <a class="nav-link contact" href="#contact">Contact</a>
-          <li class="nav-link resume resume-not">
-            <a
-              download="Ejajul_Ansari_Resume.pdf"
-              id="resume-link-1"
-              target="_blank"
-              href="./Ejajul_Ansari_Resume.pdf"
-              class="resume-link"
-              ><button id="resume-button-1" onclick="resume()">Resume</button></a
-            >
+          <li class="nav-link resume" id="resume">
+            <button onclick="resume()" id="resume-button-1">
+              <a
+                id="resume-link-1"
+                href="./Ejajul_Ansari_Resume.pdf"
+                target="_blank"
+                download="Ejajul_Ansari_Resume.pdf"
+              >
+                <i class="fa-solid fa-download"> </i>Resume
+              </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -66,15 +68,16 @@
     <div id="about" class="about section">
       <h1 class="section-title">About Me</h1>
       <br />
-      
-      <a
-        download="Ejajul_Ansari_Resume.pdf"
-        id="resume-link-2"
-        target="_blank"
-        href="./Ejajul_Ansari_Resume.pdf"
-        class="resume-link downloadSecondPortfolio"
-        ><button id="resume-button-2" onclick="resume()">Resume</button></a
-      >
+
+      <button onclick="resume()" id="resume-button-2">
+        <a
+          id="resume-link-2"
+          href="./Ejajul_Ansari_Resume.pdf"
+          target="_blank"
+          download="Ejajul_Ansari_Resume.pdf"
+          >Resume
+        </a>
+      </button>
       <div id="aboutText">
         <div id="aboutText-text-div">
           <p id="user-detail-intro">
@@ -451,8 +454,6 @@
         >
       </div>
 
-
-
       <!-- 3rd Project -->
       <div class="project-card">
         <img
@@ -558,9 +559,6 @@
           >Presentation video -></a
         >
       </div>
-      
-
-      
     </div>
 
     <!-- Stats Section -->

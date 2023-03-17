@@ -54,7 +54,7 @@ ul {
 	background-color: #ffffff;
 }
 
-.resume-link>button {
+#resume-button-1 {
 	cursor: pointer;
 	background-color: transparent;
 	color: #CCD6F6;
@@ -65,9 +65,37 @@ ul {
 	border-radius: 5px;
 }
 
-.resume-link>button:hover {
+#resume-button-1 > a {
+	color: white;
+	text-decoration: none;
+}
+
+#resume-button-1:hover {
 	background-color: #2b6fd4;
 }
+
+#resume-button-2 {
+	cursor: pointer;
+	background-color: transparent;
+	transition: 0.3s;
+	font-size: 20px;
+	padding: 10px;
+	border: 1px solid rgb(134, 228, 219);
+	border-radius: 5px;
+}
+
+#resume-button-2 > a {
+	text-decoration: none;
+	color: white;
+}
+
+/* #resume-button-2 > a:hover {
+	color: black;
+} */
+
+/* #resume-button-2:hover {
+	background-color: #e3e3e3;
+} */
 
 
 

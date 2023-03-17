@@ -7,14 +7,9 @@ var typed = new Typed("#auto-type", {
 });
 
 
-// Create a link element
-document.querySelector(".resume").addEventListener("click", () => {
-  window.open("./Ejajul_Ansari_Resume.pdf")
-});
-document.querySelector(".downloadSecondPortfolio").addEventListener("click", () => {
-  window.open("./Ejajul_Ansari_Resume.pdf")
-});
-
+function resume(){
+  window.open("https://drive.google.com/file/d/11abgEXbOijzPC4dn55ibs7IwFiXKgnXU/view?usp=sharing", "_blank");
+}
 
 
 

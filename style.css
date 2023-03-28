@@ -384,6 +384,10 @@ ul {
 	background-color: white;
 }
 
+#thirdProject{
+	height: 200px;
+}
+
 .project-tech-stack {
 	color: aqua;
 	text-align: center;

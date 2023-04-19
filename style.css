@@ -65,7 +65,7 @@ ul {
 	border-radius: 5px;
 }
 
-#resume-button-1 > a {
+#resume-button-1>a {
 	color: white;
 	text-decoration: none;
 }
@@ -84,20 +84,10 @@ ul {
 	border-radius: 5px;
 }
 
-#resume-button-2 > a {
+#resume-button-2>a {
 	text-decoration: none;
 	color: white;
 }
-
-/* #resume-button-2 > a:hover {
-	color: black;
-} */
-
-/* #resume-button-2:hover {
-	background-color: #e3e3e3;
-} */
-
-
 
 .hamburger {
 	display: none;
@@ -214,7 +204,7 @@ ul {
 	margin: 5px 0px;
 }
 
-#home > div > .full {
+#home>div>.full {
 	font-size: 45px;
 	margin-top: 10px;
 	color: #909dc5;
@@ -276,7 +266,7 @@ ul {
 	text-align: center;
 }
 
-#makeTop{
+#makeTop {
 	width: 100%;
 }
 
@@ -365,6 +355,7 @@ ul {
 .project-card>img {
 	border-radius: 5px;
 	width: 360px;
+	height: 200px;
 	margin-bottom: 7px;
 }
 
@@ -402,7 +393,7 @@ ul {
 	background-color: white;
 }
 
-#thirdProject{
+#thirdProject {
 	height: 200px;
 }
 
@@ -583,7 +574,7 @@ ul {
 		text-align: center;
 	}
 
-	#home > div > h2 {
+	#home>div>h2 {
 		color: white;
 		font-size: 40px;
 	}
@@ -638,12 +629,14 @@ ul {
 
 	.home-img {
 		width: 150px;
+		margin: 0px auto;
 	}
 
 	/* Home Section */
 	#home {
 		width: 100%;
-		margin-top: 100px;
+		margin: auto;
+		margin-top: 80px;
 		height: fit-content;
 		display: block;
 	}
@@ -669,8 +662,11 @@ ul {
 	}
 
 	/* about Section  */
+
 	#aboutText {
 		display: block;
+		width: 100%;
+		padding: 0px 5px;
 	}
 
 	#aboutText>div {
@@ -679,6 +675,18 @@ ul {
 
 	#aboutText-text-div {
 		width: 100%;
+	}
+
+
+	/* Skills */
+	#skills {
+		text-align: center;
+	}
+
+	/* projects */
+
+	#project-title {
+		width: 90%;
 	}
 
 
@@ -692,5 +700,11 @@ ul {
 
 	#stats>div>p>img {
 		width: 300px;
+	}
+
+	#about>div>div>img {
+		border: 0px;
+		width: 280px;
+		margin: auto;
 	}
 }

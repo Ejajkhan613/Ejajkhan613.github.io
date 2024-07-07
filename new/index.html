@@ -1,0 +1,3173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charSet="utf-8" />
+    <title>Luique - Personal Portfolio React NextJS Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="author" content="bslthemes" />
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/dark.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://bslthemes.com/bslthms-advanced-btns/assets/style.css" type="text/css" />
+    <script type="text/javascript" src="https://bslthemes.com/bslthms-advanced-btns/assets/script.js" async=""
+        defer=""></script>
+    <meta name="next-head-count" content="22" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="/_next/static/css/369fc20635e9e5b0.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/369fc20635e9e5b0.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-d8c0427c15a857da.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-ad45764ecfcae9e5.js" defer=""></script>
+    <script src="/_next/static/chunks/main-010ff0b6bbe5ac8f.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-8136cfa6391d6a3a.js" defer=""></script>
+    <script src="/_next/static/chunks/239-a45319878b27cf50.js" defer=""></script>
+    <script src="/_next/static/chunks/309-c8f4f5226d5edda7.js" defer=""></script>
+    <script src="/_next/static/chunks/935-375c4e44c630758c.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-292fa4720b3c3e60.js" defer=""></script>
+    <script src="/_next/static/SKLVPhfJPi6LDgoI7LWSw/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/SKLVPhfJPi6LDgoI7LWSw/_ssgManifest.js" defer=""></script>
+    <style
+        data-href="https://fonts.googleapis.com/css?family=Jost%3A0%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%7CCaveat%3A400%3B500%3B600%3B700&display=swap">
+        @font-face {
+            font-family: 'Caveat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIWpZw.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 100;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7myjJDVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mwjJTVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mz9JTVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7myRJTVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mx9IjVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mxEIjVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mwjIjVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mwKIjVBNI4.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Caveat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIipZz5Kmgq3s84t.woff) format('woff');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Caveat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIGpZz5Kmgq3s84t.woff) format('woff');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Caveat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIupZz5Kmgq3s84t.woff) format('woff');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Caveat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIWpZz5Kmgq3sw.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 100;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 100;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 100;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 200;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oDd4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/jost/v14/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+    </style>
+    <style
+        data-href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto">
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzAdKQ.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc6CsI.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzQ.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc6CsI.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsI.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc6CsI.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzQ.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc-.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc-.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rl.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEz0dL-vwnYh2eg.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzQdL-vwnYh2eg.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzwdL-vwnYh2eg.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzMdL-vwnYh2eg.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEz8dL-vwnYh2eg.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEz4dL-vwnYh2eg.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrEzAdL-vwnYg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc3CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc-CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc2CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc5CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc1CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc0CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjASc6CsTYl4BO.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xFIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xMIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xEIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xLIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xHIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xGIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzIXKMny.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc3CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc-CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc2CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc5CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc1CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc0CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc6CsTYl4BO.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic3CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic-CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic2CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic5CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic1CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic0CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsTYl4BO.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc3CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc-CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc2CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc5CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc1CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc0CsTYl4BOQ3o.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TLBCc6CsTYl4BO.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxFIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxMIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxEIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxLIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxHIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxGIzIXKMnyrYk.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzIXKMny.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfCRc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfABc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfCBc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfCxc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfChc4AMP6lbBP.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufA5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufJ5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufB5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufO5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufC5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufD5qWr4xCCQ_k.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div class="preloader">
+            <div class="centrize full-width">
+                <div class="vertical-center">
+                    <div class="spinner-logo">
+                        <img src="assets/images/logo2.png" alt="Luique - Personal Portfolio HTML Template" />
+                        <div class="spinner-dot"></div>
+                        <div class="spinner spinner-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-page">
+            <header class="header">
+                <div class="header__builder">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="logo">
+                                <a href="/">
+                                    <img width="228" height="38" src="assets/images/logo2.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+                            <a href="#" class="switcher-btn ">
+                                <span class="sw-before">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+                                        <path id="Dark_Theme" data-name="Dark Theme" fill="#000"
+                                            d="M1759.46,111.076a0.819,0.819,0,0,0-.68.147,8.553,8.553,0,0,1-2.62,1.537,8.167,8.167,0,0,1-2.96.531,8.655,8.655,0,0,1-8.65-8.682,9.247,9.247,0,0,1,.47-2.864,8.038,8.038,0,0,1,1.42-2.54,0.764,0.764,0,0,0-.12-1.063,0.813,0.813,0,0,0-.68-0.148,11.856,11.856,0,0,0-6.23,4.193,11.724,11.724,0,0,0,1,15.387,11.63,11.63,0,0,0,19.55-5.553A0.707,0.707,0,0,0,1759.46,111.076Zm-4.5,6.172a10.137,10.137,0,0,1-14.29-14.145,10.245,10.245,0,0,1,3.38-2.836c-0.14.327-.29,0.651-0.41,1.006a9.908,9.908,0,0,0-.56,3.365,10.162,10.162,0,0,0,10.15,10.189,9.776,9.776,0,0,0,3.49-.62,11.659,11.659,0,0,0,1.12-.473A10.858,10.858,0,0,1,1754.96,117.248Z"
+                                            transform="translate(-1737 -98)"></path>
+                                    </svg>
+                                </span>
+                                <span class="sw-after">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313"
+                                        viewBox="0 0 22.22 22.313">
+                                        <path id="Light_Theme" data-name="Light Theme" fill="#fff"
+                                            d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z"
+                                            transform="translate(-1737.44 -98.313)"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="menu-btn">
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <div class="menu-full-overlay">
+                                <div class="menu-full-container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="menu-full">
+                                                    <ul class="menu-full">
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/">Home</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#services-section">Services</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#skills-section">Skills</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#works-section">Works</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#resume-section">Resume</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#testimonials-sec onClick={() =&gt; linkClick()}tion">Testimonials</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#pricing-section">Pricing</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#blog-section">Blog</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars"
+                                                                href="/#contact-section">Contact</a>
+                                                        </li>
+                                                        <li
+                                                            class="menu-item menu-item-has-children has-children closed">
+                                                            <a class="splitting-text-anim-2" data-splitting="chars">
+                                                                Pages<i class="fas fa-chevron-down"></i>
+                                                            </a>
+                                                            <ul class="sub-menu" style="margin-top:1rem;display:none">
+                                                                <li class="menu-item">
+                                                                    <a class="splitting-text-anim-1"
+                                                                        data-splitting="chars" href="/works-list">Works
+                                                                        (List)</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="splitting-text-anim-1"
+                                                                        data-splitting="chars" href="/works">Works
+                                                                        (Grid)</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="splitting-text-anim-1"
+                                                                        data-splitting="chars" href="/work-single">Work
+                                                                        Single Page</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class=" splitting-text-anim-1"
+                                                                        data-splitting="chars" href="/blog">Blog</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a class="splitting-text-anim-1"
+                                                                        data-splitting="chars"
+                                                                        href="/blog-single">Single Post</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="menu-social-links">
+                                                    <a href="http://dribbble.com" target="blank"
+                                                        class="scrolla-element-anim-1" title="dribbble">
+                                                        <i class="fab fa-dribbble"></i>
+                                                    </a>
+                                                    <a href="http://twitter.com" target="blank"
+                                                        class="scrolla-element-anim-1" title="twitter">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                    <a href="http://behance.com" target="blank"
+                                                        class="scrolla-element-anim-1" title="behance">
+                                                        <i class="fab fa-behance"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="v-line-block">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="wrapper">
+                <section class="lui-section lui-section-hero lui-gradient-top" id="started-section">
+                    <div class="container">
+                        <div class="lui-started v-line v-line-left">
+                            <div class="section hero-started">
+                                <div class="content scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                    <div class="titles">
+                                        <div class="lui-subtitle">
+                                            <span>
+                                                <!-- -->
+                                                Hello, <b>my name is</b>
+                                            </span>
+                                        </div>
+                                        <h1 class="title splitting-text-anim-1 scroll-animate" data-splitting="chars"
+                                            data-animate="active">
+                                            <span>
+                                                <b>Zoé</b>
+                                                Miller
+                                                <!-- -->
+                                            </span>
+                                        </h1>
+                                        <div class="label lui-subtitle">
+                                            <!-- -->
+                                            I am <strong>Web Developer</strong>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div>
+                                            <p>From France, Paris. I have rich experience in web design, also I am good
+                                                at wordpress. I love to talk with you about our unique.</p>
+                                        </div>
+                                        <div class="social-links">
+                                            <a target="_blank" rel="nofollow" href="#">
+                                                <i aria-hidden="true" class="fab fa-twitter"></i>
+                                            </a>
+                                            <a target="_blank" rel="nofollow" href="#">
+                                                <i aria-hidden="true" class="fab fa-dribbble"></i>
+                                            </a>
+                                            <a target="_blank" rel="nofollow" href="#">
+                                                <i aria-hidden="true" class="fab fa-behance"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bts">
+                                        <a target="_blank" href="https://drive.google.com/" class="btn">
+                                            <span>Download CV</span>
+                                        </a>
+                                        <a href="#skills-section" class="btn-lnk">
+                                            <!-- -->
+                                            My Skills
+                                            <!-- -->
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                    <img decoding="async" src="assets/images/profile2.png"
+                                        alt="&lt;b&gt;Zoé&lt;/b&gt; Miller" />
+                                    <span class="circle circle-1"></span>
+                                    <span class="circle img-1"
+                                        style="background-image:url(assets/images/pat-1.png)"></span>
+                                    <span class="circle img-2"
+                                        style="background-image:url(assets/images/pat-2.png)"></span>
+                                    <span class="circle img-3"
+                                        style="background-image:url(assets/images/pat-2.png)"></span>
+                                    <div class="info-list">
+                                        <ul>
+                                            <li>
+                                                <span class="num">
+                                                    12 <strong>+</strong>
+                                                </span>
+                                                <span class="value">
+                                                    Years of <strong>Experience</strong>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="num">330</span>
+                                                <span class="value">
+                                                    Completed <strong>Projects</strong>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>Web Developer </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-bottom" id="services-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>What I Do </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        my <b>Services</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line v-line-right">
+                        <div class="container">
+                            <div class="swiper swiper-container js-services scrolla-element-anim-1 scroll-animate"
+                                data-animate="active">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="services-item">
+                                            <div class="lui-subtitle">
+                                                <span>Web Development </span>
+                                            </div>
+                                            <div class="icon"></div>
+                                            <h5 class="lui-title">
+                                                <span>Web Design &amp;Logo </span>
+                                            </h5>
+                                            <div class="lui-text">
+                                                <div>
+                                                    <!-- -->
+                                                    Web designers craft the overall vision &amp;plan for a website
+                                                    layout. Professional logo development: Business, Company, or
+                                                    Personal.
+                                                    <!-- -->
+                                                </div>
+                                            </div>
+                                            <a href="#pricing-section" class="lnk">
+                                                <!-- -->
+                                                See Pricing
+                                                <!-- -->
+                                            </a>
+                                            <div class="image" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="services-item">
+                                            <div class="lui-subtitle">
+                                                <span>Apps Development </span>
+                                            </div>
+                                            <div class="icon"></div>
+                                            <h5 class="lui-title">
+                                                <span>iOS &amp;Android </span>
+                                            </h5>
+                                            <div class="lui-text">
+                                                <div>
+                                                    <p>Design Software applications to run on mobile devices. Modern and
+                                                        mobile-ready application that will help you reach all of your
+                                                        marketing.</p>
+                                                </div>
+                                            </div>
+                                            <a href="#pricing-section" class="lnk">
+                                                <!-- -->
+                                                See Pricing
+                                                <!-- -->
+                                            </a>
+                                            <div class="image" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="services-item">
+                                            <div class="lui-subtitle">
+                                                <span>Game Development </span>
+                                            </div>
+                                            <div class="icon"></div>
+                                            <h5 class="lui-title">
+                                                <span>Unity &amp;Unreal Engine </span>
+                                            </h5>
+                                            <div class="lui-text">
+                                                <div>
+                                                    <!-- -->
+                                                    Creating games &amp;describes the design, development and release of
+                                                    a game. Developing unique mobile android and ios games.
+                                                    <!-- -->
+                                                </div>
+                                            </div>
+                                            <a href="#pricing-section" class="lnk">
+                                                <!-- -->
+                                                See Pricing
+                                                <!-- -->
+                                            </a>
+                                            <div class="image" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="services-item">
+                                            <div class="lui-subtitle">
+                                                <span>Advertising </span>
+                                            </div>
+                                            <div class="icon"></div>
+                                            <h5 class="lui-title">
+                                                <span>Google Ads </span>
+                                            </h5>
+                                            <div class="lui-text">
+                                                <div>
+                                                    <!-- -->
+                                                    Advertising services include: Google search result pages, gmails,
+                                                    YouTube and other websites participated in Google Ads program.
+                                                    <!-- -->
+                                                </div>
+                                            </div>
+                                            <a href="#pricing-section" class="lnk">
+                                                <!-- -->
+                                                See Pricing
+                                                <!-- -->
+                                            </a>
+                                            <div class="image" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="services-item">
+                                            <div class="lui-subtitle">
+                                                <span>Music Writing </span>
+                                            </div>
+                                            <div class="icon"></div>
+                                            <h5 class="lui-title">
+                                                <span>Sound Track </span>
+                                            </h5>
+                                            <div class="lui-text">
+                                                <div>
+                                                    <p>Music copying, writing, creating, transcription and composition
+                                                        services.</p>
+                                                </div>
+                                            </div>
+                                            <a href="#pricing-section" class="lnk">
+                                                <!-- -->
+                                                See Pricing
+                                                <!-- -->
+                                            </a>
+                                            <div class="image" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>Services </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-center" id="skills-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>Professional Skills </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        my <b>Talent</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line v-line-left">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="skills-items">
+                                        <div class="skills-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <h6 class="name">
+                                                <span>PHP </span>
+                                            </h6>
+                                            <div class="text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="dots">
+                                                <div class="dot" style="width:85%">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="value">
+                                                <span class="num">
+                                                    85 <span>%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="skills-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <h6 class="name">
+                                                <span>Python </span>
+                                            </h6>
+                                            <div class="text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="dots">
+                                                <div class="dot" style="width:75%">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="value">
+                                                <span class="num">
+                                                    75 <span>%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="skills-items">
+                                        <div class="skills-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <h6 class="name">
+                                                <span>JavaScript </span>
+                                            </h6>
+                                            <div class="text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="dots">
+                                                <div class="dot" style="width:75%">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="value">
+                                                <span class="num">
+                                                    75 <span>%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="skills-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <h6 class="name">
+                                                <span>React </span>
+                                            </h6>
+                                            <div class="text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="dots">
+                                                <div class="dot" style="width:70%">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="value">
+                                                <span class="num">
+                                                    70 <span>%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="skills-items">
+                                        <div class="skills-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <h6 class="name">
+                                                <span>WordPress </span>
+                                            </h6>
+                                            <div class="text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="dots">
+                                                <div class="dot" style="width:90%">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="value">
+                                                <span class="num">
+                                                    90 <span>%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="skills-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <h6 class="name">
+                                                <span>Adobe XD </span>
+                                            </h6>
+                                            <div class="text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="dots">
+                                                <div class="dot" style="width:80%">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="value">
+                                                <span class="num">
+                                                    80 <span>%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>Skills </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-top" id="works-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>Portfolio </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        my <b>Cases</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line v-line-right">
+                        <div class="container">
+                            <!--$!-->
+                            <template data-dgst="DYNAMIC_SERVER_USAGE"></template>
+                            <!--/$-->
+                            <div class="lui-bgtitle">
+                                <span>Portfolio </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-bottom" id="resume-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>Resume </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        my <b>Story</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line v-line-left">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <h5 class="history-title scrolla-element-anim-1 scroll-animate"
+                                        data-animate="active">
+                                        <span>Education </span>
+                                    </h5>
+                                    <div class="history-items">
+                                        <div class="history-item lui-collapse-item scroll-animate opened"
+                                            data-animate="active">
+                                            <h6 class="name lui-collapse-btn active">
+                                                <span>
+                                                    <!-- -->
+                                                    CoderHouse Course
+                                                    <!-- -->
+                                                </span>
+                                            </h6>
+                                            <div class="history-content">
+                                                <div class="subname">
+                                                    <span>
+                                                        <!-- -->
+                                                        Backend Programming
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="date lui-subtitle">
+                                                    <span>
+                                                        <!-- -->
+                                                        2014
+                                                        <!-- -->
+                                                        -
+                                                        <!-- -->
+                                                        2016
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="text">
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="history-item lui-collapse-item scroll-animate "
+                                            data-animate="active">
+                                            <h6 class="name lui-collapse-btn ">
+                                                <span>
+                                                    <!-- -->
+                                                    Lviv National Academy of Arts
+                                                    <!-- -->
+                                                </span>
+                                            </h6>
+                                            <div class="history-content">
+                                                <div class="subname">
+                                                    <span>
+                                                        <!-- -->
+                                                        Faculty of Design
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="date lui-subtitle">
+                                                    <span>
+                                                        <!-- -->
+                                                        2012
+                                                        <!-- -->
+                                                        -
+                                                        <!-- -->
+                                                        2014
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="text">
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="history-item lui-collapse-item scroll-animate "
+                                            data-animate="active">
+                                            <h6 class="name lui-collapse-btn ">
+                                                <span>
+                                                    <!-- -->
+                                                    IT Future
+                                                    <!-- -->
+                                                </span>
+                                            </h6>
+                                            <div class="history-content">
+                                                <div class="subname">
+                                                    <span>
+                                                        <!-- -->
+                                                        High School
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="date lui-subtitle">
+                                                    <span>
+                                                        <!-- -->
+                                                        2010
+                                                        <!-- -->
+                                                        -
+                                                        <!-- -->
+                                                        2012
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="text">
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <h5 class="history-title scrolla-element-anim-1 scroll-animate"
+                                        data-animate="active">
+                                        <span>Experience </span>
+                                    </h5>
+                                    <div class="history-items">
+                                        <div class="history-item lui-collapse-item scroll-animate opened"
+                                            data-animate="active">
+                                            <h6 class="name lui-collapse-btn  active">
+                                                <span>
+                                                    <!-- -->
+                                                    UI Head &amp;Manager
+                                                    <!-- -->
+                                                </span>
+                                            </h6>
+                                            <div class="history-content">
+                                                <div class="subname">
+                                                    <span>
+                                                        <!-- -->
+                                                        Soft Tech Inc.
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="date lui-subtitle">
+                                                    <span>
+                                                        <!-- -->
+                                                        2020
+                                                        <!-- -->
+                                                        -
+                                                        <!-- -->
+                                                        <b>Present</b>
+                                                    </span>
+                                                </div>
+                                                <div class="text">
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="history-item lui-collapse-item scroll-animate "
+                                            data-animate="active">
+                                            <h6 class="name lui-collapse-btn ">
+                                                <span>
+                                                    <!-- -->
+                                                    UI / UX Specialist
+                                                    <!-- -->
+                                                </span>
+                                            </h6>
+                                            <div class="history-content">
+                                                <div class="subname">
+                                                    <span>
+                                                        <!-- -->
+                                                        Kana Design Studio
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="date lui-subtitle">
+                                                    <span>
+                                                        <!-- -->
+                                                        2018
+                                                        <!-- -->
+                                                        -
+                                                        <!-- -->
+                                                        <!-- -->
+                                                        2020</span>
+                                                </div>
+                                                <div class="text">
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="history-item lui-collapse-item scroll-animate "
+                                            data-animate="active">
+                                            <h6 class="name lui-collapse-btn ">
+                                                <span>
+                                                    <!-- -->
+                                                    Plugins Developer
+                                                    <!-- -->
+                                                </span>
+                                            </h6>
+                                            <div class="history-content">
+                                                <div class="subname">
+                                                    <span>
+                                                        <!-- -->
+                                                        Fiverr.com
+                                                        <!-- -->
+                                                    </span>
+                                                </div>
+                                                <div class="date lui-subtitle">
+                                                    <span>
+                                                        <!-- -->
+                                                        2016
+                                                        <!-- -->
+                                                        -
+                                                        <!-- -->
+                                                        <!-- -->
+                                                        2018</span>
+                                                </div>
+                                                <div class="text">
+                                                    <div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>History </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-center" id="testimonials-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>Testimonials </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        what <b>Customers Say</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line v-line-right">
+                        <div class="container">
+                            <div class="swiper swiper-container js-testimonials scrolla-element-anim-1 scroll-animate"
+                                data-animate="active">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-item">
+                                            <div class="image">
+                                                <img decoding="async" src="assets/images/testi4-2.jpg"
+                                                    alt="Barbara Wilson" />
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+                                                        height="34px">
+                                                        <path fill-rule="evenodd" stroke-width="2px"
+                                                            stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)"
+                                                            d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="text lui-text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h6 class="name">
+                                                    <span>Barbara Wilson</span>
+                                                </h6>
+                                                <div class="author">
+                                                    <span>CEO Company</span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-img" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-item">
+                                            <div class="image">
+                                                <img decoding="async" src="assets/images/testi4-1.jpg"
+                                                    alt="Charlie Smith" />
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+                                                        height="34px">
+                                                        <path fill-rule="evenodd" stroke-width="2px"
+                                                            stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)"
+                                                            d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="text lui-text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h6 class="name">
+                                                    <span>Charlie Smith</span>
+                                                </h6>
+                                                <div class="author">
+                                                    <span>Designer</span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-img" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-item">
+                                            <div class="image">
+                                                <img decoding="async" src="assets/images/testi4-4.jpg" alt="Roy Wang" />
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+                                                        height="34px">
+                                                        <path fill-rule="evenodd" stroke-width="2px"
+                                                            stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)"
+                                                            d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="text lui-text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h6 class="name">
+                                                    <span>Roy Wang</span>
+                                                </h6>
+                                                <div class="author">
+                                                    <span>Manager GYM</span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-img" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-item">
+                                            <div class="image">
+                                                <img decoding="async" src="assets/images/testi4-3.jpg"
+                                                    alt="Jennifer Smith" />
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+                                                        height="34px">
+                                                        <path fill-rule="evenodd" stroke-width="2px"
+                                                            stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)"
+                                                            d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="text lui-text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h6 class="name">
+                                                    <span>Jennifer Smith</span>
+                                                </h6>
+                                                <div class="author">
+                                                    <span>CEO &amp;Founder</span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-img" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-item">
+                                            <div class="image">
+                                                <img decoding="async" src="assets/images/testi4-5.jpg"
+                                                    alt="Paul Freeman" />
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+                                                        height="34px">
+                                                        <path fill-rule="evenodd" stroke-width="2px"
+                                                            stroke="rgb(0, 0, 0)" fill="rgb(41, 165, 135)"
+                                                            d="M17.360,8.325 C15.490,5.563 11.616,4.762 8.705,6.536 C6.901,7.635 5.815,9.533 5.826,11.567 C5.828,14.854 8.637,17.516 12.101,17.515 C13.290,17.513 14.456,17.192 15.460,16.587 C14.967,17.975 14.049,19.457 12.537,20.942 C11.934,21.533 11.951,22.476 12.574,23.048 C13.198,23.619 14.192,23.604 14.794,23.012 C20.384,17.515 19.658,11.539 17.360,8.333 L17.360,8.325 ZM32.407,8.325 C30.538,5.563 26.663,4.762 23.752,6.536 C21.949,7.635 20.863,9.533 20.873,11.567 C20.875,14.854 23.685,17.516 27.148,17.515 C28.338,17.513 29.503,17.192 30.508,16.587 C30.015,17.975 29.097,19.457 27.585,20.942 C26.982,21.533 26.999,22.476 27.622,23.048 C28.245,23.619 29.239,23.604 29.842,23.012 C35.432,17.515 34.706,11.539 32.407,8.333 L32.407,8.325 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="text lui-text">
+                                                <div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <h6 class="name">
+                                                    <span>Paul Freeman</span>
+                                                </h6>
+                                                <div class="author">
+                                                    <span>Photographer</span>
+                                                </div>
+                                            </div>
+                                            <div class="bg-img" style="background-image:url(assets/images/pat-2.png)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>Reviews </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-center" id="pricing-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>Pricing </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        my <b>Price Board</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-line v-line-left">
+                        <div class="container">
+                            <div class="pricing-items row">
+                                <div class="pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                    <div class="pricing-item scrolla-element-anim-1 scroll-animate"
+                                        data-animate="active">
+                                        <div class="lui-subtitle">
+                                            <span>Hourley Basis </span>
+                                        </div>
+                                        <div class="icon"></div>
+                                        <div class="price">
+                                            <span>
+                                                <!-- -->
+                                                39 <b>$</b>
+                                            </span>
+                                            <em>Hour</em>
+                                        </div>
+                                        <div class="lui-text">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                                    ipsum suspendisse ultrices gravida.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Brand Design
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Web Development
+                                                    </li>
+                                                    <li>
+                                                        <em>Advertising</em>
+                                                    </li>
+                                                    <li>
+                                                        <em>Photography</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#contact-section" class="btn btn-solid">
+                                            <span>Start Project</span>
+                                        </a>
+                                        <div class="bg-img" style="background-image:url(assets/images/pat-2.png)"></div>
+                                    </div>
+                                </div>
+                                <div class="pricing-col center col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                    <div class="label">
+                                        <span>Popular </span>
+                                    </div>
+                                    <div class="pricing-item scrolla-element-anim-1 scroll-animate"
+                                        data-animate="active">
+                                        <div class="lui-subtitle">
+                                            <span>Freelancing </span>
+                                        </div>
+                                        <div class="icon"></div>
+                                        <div class="price">
+                                            <span>
+                                                <!-- -->
+                                                259 <b>$</b>
+                                            </span>
+                                            <em>Week</em>
+                                        </div>
+                                        <div class="lui-text">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                                    ipsum suspendisse ultrices gravida.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Brand Design
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Web Development
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Advertising
+                                                    </li>
+                                                    <li>
+                                                        <em>Photography</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#contact-section" class="btn btn-solid">
+                                            <span>Start Project</span>
+                                        </a>
+                                        <div class="bg-img" style="background-image:url(assets/images/pat-2.png)"></div>
+                                    </div>
+                                </div>
+                                <div class="pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                    <div class="pricing-item scrolla-element-anim-1 scroll-animate"
+                                        data-animate="active">
+                                        <div class="lui-subtitle">
+                                            <span>Full Time </span>
+                                        </div>
+                                        <div class="icon"></div>
+                                        <div class="price">
+                                            <span>
+                                                <!-- -->
+                                                1.249 <b>$</b>
+                                            </span>
+                                            <em>Month</em>
+                                        </div>
+                                        <div class="lui-text">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                                    ipsum suspendisse ultrices gravida.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Brand Design
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Web Development
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Advertising
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-check"></i>
+                                                        Photography
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#contact-section" class="btn btn-solid">
+                                            <span>Start Project</span>
+                                        </a>
+                                        <div class="bg-img" style="background-image:url(assets/images/pat-2.png)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>Pricing </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="lui-section lui-gradient-bottom" id="contact-section">
+                    <div class="lui-heading">
+                        <div class="container">
+                            <div class="m-titles align-center">
+                                <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>Contact Me </span>
+                                </h2>
+                                <div class="m-subtitle splitting-text-anim-1 scroll-animate" data-splitting="words"
+                                    data-animate="active">
+                                    <span>
+                                        <!-- -->
+                                        Let’s <b>Talk About Ideas</b>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lui-contacts v-line v-line-left">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                    <div class="numbers-items">
+                                        <div class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <div class="icon">
+                                                <i aria-hidden="true" class="far fa-map"></i>
+                                            </div>
+                                            <div class="title">
+                                                <span>Address </span>
+                                            </div>
+                                            <div class="lui-text">
+                                                <span>New Delhi, Delhi, India </span>
+                                            </div>
+                                        </div>
+                                        <div class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <div class="icon">
+                                                <i aria-hidden="true" class="far fa-user"></i>
+                                            </div>
+                                            <div class="title">
+                                                <span>Freelance </span>
+                                            </div>
+                                            <div class="lui-text">
+                                                <span>Available Right Now </span>
+                                            </div>
+                                        </div>
+                                        <div class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <div class="icon">
+                                                <i aria-hidden="true" class="far fa-envelope"></i>
+                                            </div>
+                                            <div class="title">
+                                                <span>Email </span>
+                                            </div>
+                                            <div class="lui-text">
+                                                <span> <a
+                                                        href="mailto:ejajul.masai@gmail.com"></a>ejajul.masai@gmail.com
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="numbers-item scrolla-element-anim-1 scroll-animate"
+                                            data-animate="active">
+                                            <div class="icon">
+                                                <i aria-hidden="true" class="far fa-address-book"></i>
+                                            </div>
+                                            <div class="title">
+                                                <span>Phone </span>
+                                            </div>
+                                            <div class="lui-text">
+                                                <span><a href="tel:+91-9891640628"></a>+91 9891640628 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                                    <div class="contacts-form scrolla-element-anim-1 scroll-animate"
+                                        data-animate="active">
+                                        <div class="bg-img" style="background-image:url(assets/images/pat-1.png)"></div>
+                                        <div class="contacts-form">
+                                            <form id="cform">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="group">
+                                                            <label>
+                                                                Your Full Name <b>*</b>
+                                                                <input type="text" name="name" />
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="group">
+                                                            <label>
+                                                                Your Email Address <b>*</b>
+                                                                <input type="email" name="email" />
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="group">
+                                                            <label>
+                                                                Your Subject <b>*</b>
+                                                                <input type="text" name="subject" />
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="group">
+                                                            <label>
+                                                                Your Message <b>*</b>
+                                                                <textarea name="message"></textarea>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
+                                                        <div class="terms-label">* Accept the terms and conditions.
+                                                        </div>
+                                                        <a href="#" class="btn">
+                                                            <span>Send Message</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="alert-success" style="display:none">
+                                                <p>Thanks, your message is sent successfully.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lui-bgtitle">
+                                <span>Contact Me </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="footer">
+                <div class="footer__builder">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+                                    <a target="_blank" rel="nofollow" href="https://github.com/Ejajkhan613">
+                                        <i aria-hidden="true" class="fab fa-github"></i>
+                                    </a>
+                                    <a target="_blank" rel="nofollow"
+                                        href="https://www.linkedin.com/in/ejajul-ansari-39168b242/">
+                                        <i aria-hidden="true" class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="copyright-text align-center scrolla-element-anim-1 scroll-animate"
+                                    data-animate="active">
+                                    © 2024 <strong>Ejajul Ansari</strong>
+                                    . All rights reserved
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="copyright-text align-right scrolla-element-anim-1 scroll-animate"
+                                    data-animate="active">
+                                    Developed by <strong>Ejajul Ansari</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cursor"></div>
+        <div class="bsl-popup" data-theme="luique" data-category="react">
+            <div class="bsl-popup__buttons"></div>
+            <div class="bsl-popup__content bsl-popup__content-related">
+                <div class="bsl-popup__menu"></div>
+                <div class="bsl-popup__tabs">
+                    <div class="bsl-popup__tab bsl-popup__tab-demo"></div>
+                    <div class="bsl-popup__tab bsl-popup__tab-all"></div>
+                    <div class="bsl-popup__tab bsl-popup__tab-related"></div>
+                    <div class="bsl-popup__tab bsl-popup__tab-version"></div>
+                </div>
+            </div>
+            <div class="bsl-popup__content bsl-popup__content-help"></div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+            {
+                "props": {
+                    "pageProps": {
+                    }
+                },
+                "page": "/",
+                "query": {
+                },
+                "buildId": "SKLVPhfJPi6LDgoI7LWSw",
+                "nextExport": true,
+                "autoExport": true,
+                "isFallback": false,
+                "scriptLoader": [
+                ]
+            }</script>
+</body>
+
+</html>

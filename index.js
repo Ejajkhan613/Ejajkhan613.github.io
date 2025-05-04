@@ -8,7 +8,7 @@ var typed = new Typed("#auto-type", {
 
 
 function resume(){
-  window.open("https://drive.google.com/file/d/11abgEXbOijzPC4dn55ibs7IwFiXKgnXU/view?usp=sharing", "_blank");
+  window.open("./Ejajul_Ansari_Resume.pdf", "_blank");
 }
 
 

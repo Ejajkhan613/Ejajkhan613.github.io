@@ -8,7 +8,7 @@ var typed = new Typed("#auto-type", {
 
 
 function resume(){
-  window.open("./Ejajul_Ansari_Resume.pdf", "_blank");
+  window.open("./Ejajul_Ansari_Backend_Developer_Resume.pdf", "_blank");
 }
 
 

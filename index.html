@@ -1,480 +1,659 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejajul Ansari | Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="myImage.JPG" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+        />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ejajul Ansari | Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="myImage.JPG" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-</head>
+    <body>
+        <!-- Nav Section -->
+        <header>
+            <input type="checkbox" id="nav_check" hidden />
+            <nav id="nav-menu">
+                <ul>
+                    <a class="nav-link home" href="#home">Home</a>
+                    <a class="nav-link about" href="#about">About</a>
+                    <a class="nav-link skills" href="#skills">Skills</a>
+                    <a class="nav-link projects" href="#projects">Projects</a>
+                    <a class="nav-link" href="#stats">Stats</a>
+                    <a class="nav-link contact" href="#contact">Contact</a>
+                    <li class="nav-link resume" id="resume">
+                        <button onclick="resume()" id="resume-button-1">
+                            <a
+                                id="resume-link-1"
+                                href="./Ejajul_Ansari_Backend_Developer_Resume.pdf"
+                                target="_blank"
+                                download="Ejajul_Ansari_Backend_Developer_Resume.pdf"
+                            >
+                                <i class="fa-solid fa-download"> </i>Resume
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </header>
 
-<body>
-  <!-- Nav Section -->
-  <header>
-    <input type="checkbox" id="nav_check" hidden />
-    <nav id="nav-menu">
-      <ul>
-        <a class="nav-link home" href="#home">Home</a>
-        <a class="nav-link about" href="#about">About</a>
-        <a class="nav-link skills" href="#skills">Skills</a>
-        <a class="nav-link projects" href="#projects">Projects</a>
-        <a class="nav-link" href="#stats">Stats</a>
-        <a class="nav-link contact" href="#contact">Contact</a>
-        <li class="nav-link resume" id="resume">
-          <button onclick="resume()" id="resume-button-1">
-            <a id="resume-link-1" href="./Ejajul_Ansari_Backend_Developer_Resume.pdf" target="_blank"
-              download="Ejajul_Ansari_Backend_Developer_Resume.pdf">
-              <i class="fa-solid fa-download"> </i>Resume
-            </a>
-          </button>
-        </li>
-      </ul>
-    </nav>
-    <label for="nav_check" class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </label>
-  </header>
+        <!-- Home Section -->
+        <div id="home">
+            <!-- Image Sections -->
+            <div>
+                <img
+                    src="https://avatars.githubusercontent.com/u/112761880?v=4"
+                    class="home-img"
+                    alt="Ejajul Ansari profile image"
+                />
+            </div>
 
-  <!-- Home Section -->
-  <div id="home">
-    <!-- Image Sections -->
-    <div>
-      <img src="https://avatars.githubusercontent.com/u/112761880?v=4" class="home-img" alt="image" />
-    </div>
+            <!-- Personal Details section -->
+            <div>
+                <p>Hi, I'm</p>
+                <h1 id="user-detail-name">Ejajul Ansari</h1>
+                <h1 class="full">Backend Engineer • Full Stack Developer</h1>
+                <p>
+                    I build scalable backend systems, design efficient APIs, and
+                    integrate cloud & AI-driven solutions.
+                </p>
+            </div>
+        </div>
 
-    <!-- Personal Details section -->
-    <div>
-      <p>Hi, my name is</p>
-      <h1 id="user-detail-name">Ejajul Ansari</h1>
-      <h1 id="user-detail-name" class="full">Full Stack Web Developer</h1>
-    </div>
-  </div>
+        <!-- About Section -->
+        <div id="about" class="about section">
+            <h1 class="section-title">About Me</h1>
+            <br />
 
-  <!-- About Section -->
-  <div id="about" class="about section">
-    <h1 class="section-title">About Me</h1>
-    <br />
+            <button onclick="resume()" id="resume-button-2">
+                <a
+                    id="resume-link-2"
+                    href="./Ejajul_Ansari_Backend_Developer_Resume.pdf"
+                    target="_blank"
+                    download="Ejajul_Ansari_Backend_Developer_Resume.pdf"
+                    >Download Resume
+                </a>
+            </button>
 
-    <button onclick="resume()" id="resume-button-2">
-      <a id="resume-link-2" href="./Ejajul_Ansari_Backend_Developer_Resume.pdf" target="_blank"
-        download="Ejajul_Ansari_Backend_Developer_Resume.pdf">Resume
-      </a>
-    </button>
-    <div id="aboutText">
-      <div id="aboutText-text-div">
-        <p id="user-detail-intro">
-          Backend Developer with 2+ years of experience in building scalable web apps using Node.js, Express.js,
-          MongoDB, React.js, and Next.js. Skilled in backend architecture, REST APIs, frontend development, CI/CD, AWS,
-          and testing with Jest. Proven ability to lead teams, manage lifecycles, and deliver high-performance solutions
-          in agile environments.
-        </p>
-      </div>
-      <div>
-        <img src="./photos/coder.webp" class="home-img coder-img" alt="image" />
-      </div>
-    </div>
-  </div>
+            <div id="aboutText">
+                <div id="aboutText-text-div">
+                    <p id="user-detail-intro">
+                        Backend Engineer with around 3 years of experience
+                        building high-performance and scalable web applications.
+                        I specialize in
+                        <b>Node.js, Express.js, and database design</b>, with
+                        strong experience in
+                        <b
+                            >REST API development, system architecture, and
+                            performance optimization</b
+                        >. <br /><br />
+                        I’ve led development from scratch, improved system
+                        performance by up to <b>45%</b>, and streamlined
+                        deployment pipelines using
+                        <b>CI/CD and cloud technologies</b>. Alongside backend
+                        expertise, I bring hands-on experience with
+                        <b>React.js and Next.js</b> to deliver complete
+                        end-to-end solutions. <br /><br />
+                        Currently working as an <b>IBM Trainer</b>, where I
+                        mentor developers in
+                        <b>full stack development and predictive analytics</b>,
+                        combining industry practices with real-world
+                        applications.
+                    </p>
+                </div>
 
-  <!-- Skills Section -->
-  <br /><br />
-  <hr />
-  <div id="skills">
-    <div id="makeTop">
-      <h1 id="skills-title">Skills</h1>
-      <h2 id="skills-category">----Frontend----</h2>
-    </div>
+                <div>
+                    <img
+                        src="./photos/coder.webp"
+                        class="home-img coder-img"
+                        alt="Coding illustration"
+                    />
+                </div>
+            </div>
+        </div>
 
-    <div class="skills-card">
-      <img height="180px" src="./photos/html.svg" class="skills-card-img" alt="HTML" />
-      <h1 class="skills-card-name">HTML</h1>
-    </div>
-    <div class="skills-card">
-      <img height="180px" src="./photos/css.svg" class="skills-card-img" alt="CSS" />
-      <h1 class="skills-card-name">CSS</h1>
-    </div>
-    <div class="skills-card">
-      <img height="180px" width="130px" src="./photos/react.svg" class="skills-card-img" alt="ReactJS" />
-      <h1 class="skills-card-name">ReactJS</h1>
-    </div>
-    <div class="skills-card">
-      <img height="180px" width="130px" src="./photos/nextjs.png" class="skills-card-img" alt="NextJS" />
-      <h1 class="skills-card-name">NextJS</h1>
-    </div>
-    <div class="skills-card">
-      <img height="180px" width="130px" src="./photos/javascript.svg" class="skills-card-img" alt="JavaScript" />
-      <h1 class="skills-card-name">JavaScript</h1>
-    </div>
-    <div class="skills-card">
-      <img height="180px" width="130px" src="./photos/chartjs.svg" class="skills-card-img" alt="ChartJS" />
-      <h1 class="skills-card-name">ChartJS</h1>
-    </div>
-    <div class="skills-card">
-      <img src="./photos/figma.svg" height="180px" class="skills-card-img" alt="Figma" />
-      <h1 class="skills-card-name">Figma</h1>
-    </div>
-    <div class="skills-card">
-      <img src="./photos/dom.jpeg" height="130px" class="skills-card-img" alt="Dom Manipulation" />
-      <br /><br />
-      <h1 class="skills-card-name">DOM Manipulation</h1>
-    </div>
-    <div class="skills-card">
-      <img src="./photos/api.jpg" height="160px" class="skills-card-img" alt="" />
-      <br /><br />
-      <h1 class="skills-card-name">API's</h1>
-    </div>
-    <div class="skills-card">
-      <img src="./photos/rd.jpg" height="100px" class="skills-card-img" alt="" />
-      <br /><br /><br /><br />
-      <h1 class="skills-card-name">Responsive Design</h1>
-    </div>
-  </div>
-
-  <!-- Backend Skills -->
-  <br /><br />
-  <h2 id="skills-category">----Backend----</h2>
-  <div id="skillsBackend">
-    <div class="skills-card">
-      <img height="180px" width="130px" src="./photos/javascript.svg" class="skills-card-img" alt="JavaScript" />
-      <h1 class="skills-card-name">JavaScript</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/nodejs.svg" height="180px" width="130px" class="skills-card-img" alt="NodeJS" />
-      <h1 class="skills-card-name">NodeJS</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/express.png" height="150px" width="190px" class="skills-card-img" alt="ExpressJS" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">ExpressJS</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/mongodb.svg" height="180px" class="skills-card-img" alt="MongoDB" />
-      <h1 class="skills-card-name">MongoDB</h1>
-    </div>
-
-
-    <div class="skills-card">
-      <img src="./photos/mongoose.png" height="120px" width="190px" class="skills-card-img" alt="MongooseJS" />
-      <br /><br /><br /><br /><br />
-      <h1 class="skills-card-name">MongooseJS</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/socketio.png" height="150px" width="190px" class="skills-card-img" alt="Socket.io" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">Socket.io</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/aws.jpg" height="150px" width="190px" class="skills-card-img" alt="AWS" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">AWS</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/jest.png" height="150px" width="190px" class="skills-card-img" alt="Jest" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">Jest</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/data.webp" height="140px" width="190px" class="skills-card-img" alt="Aggregation" />
-      <br /><br /><br /><br />
-      <h1 class="skills-card-name">Aggregation</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/server.jpg" height="150px" width="190px" class="skills-card-img" alt="Server Handling" />
-      <br />
-      <h1 class="skills-card-name">Server Handling</h1>
-    </div>
-  </div>
-
-  <!-- Additional Skills -->
-  <br /><br />
-  <h2 id="skills-category">-Additional Skills-</h2>
-  <div id="skillsAdditional">
-    <div class="skills-card">
-      <img height="150px" width="160px" src="./photos/dsa.png" class="skills-card-img" alt="DSA" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">DSA</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/ps.jpg" height="160px" class="skills-card-img" alt="Problem Solving" />
-      <h1 class="skills-card-name">Problem Solving</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/github.png" height="170px" class="skills-card-img" alt="Github" />
-      <br /><br />
-      <h1 class="skills-card-name">Github</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/vercel.jpg" height="130px" width="150px" class="skills-card-img" alt="Vercel" />
-      <br /><br /><br /><br />
-      <h1 class="skills-card-name">Vercel</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/netlify.jpeg" height="130px" width="150px" class="skills-card-img" alt="Netlify" />
-      <br /><br /><br /><br />
-      <h1 class="skills-card-name">Netlify</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/jira.png" height="130px" width="150px" class="skills-card-img" alt="Jira" />
-      <br /><br /><br /><br />
-      <h1 class="skills-card-name">Jira</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/odoo.png" height="130px" width="150px" class="skills-card-img" alt="Jira" />
-      <br /><br /><br /><br />
-      <h1 class="skills-card-name">Odoo</h1>
-    </div>
-
-
-    <div class="skills-card">
-      <img src="./photos/teamwork.jpg" height="150px" width="190px" class="skills-card-img" alt="Team Work" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">Team Work</h1>
-    </div>
-
-    <div class="skills-card">
-      <img src="./photos/self_learning.jpg" height="150px" width="190px" class="skills-card-img" alt="Self Learning" />
-      <br /><br /><br />
-      <h1 class="skills-card-name">Self Learning</h1>
-    </div>
-
-    <!-- For Auto Typing -->
-    <div class="autotyping">
-      <br /><br /><br /><br />
-      <h2>
-        and also
-        <p id="auto-type"></p>
-      </h2>
-    </div>
-  </div>
-
-  <!-- Projects Section -->
-  <br /><br /><br /><br /><br /><br /><br /><br />
-  <hr />
-  <div id="projects">
-    <div id="makeTop">
-      <h1 id="project-title">Checkout My Projects</h1>
-    </div>
-
-    <div class="project-card">
-      <img src="./photos/silvi-player.jpg" alt="Silvi Player" />
-      <h2 class="project-title">Silvi Player</h2>
-      <p class="project-description">
-        It is designed for students and self-learners, enabling quicker learning through reduced video durations.
-      </p>
-      <br />
-      <p class="project-tech-stack">
-        <span>Tech Stack Used</span> ReactJS | NodeJS | JavaScript | JavaScript Web Audio API
-        <br />
-        <br />
+        <!-- Skills Section -->
+        <br /><br />
         <hr />
-        <br />
-        <!-- Github Link -->
-        <a target="_blank" href="https://github.com/Ejajkhan613/silvi-player" class="project-github-link">Github
-          Codebase -></a>
+        <div id="skills">
+            <div id="makeTop">
+                <h1 id="skills-title">Skills</h1>
+                <h2 id="skills-category">----Frontend----</h2>
+            </div>
 
-        <!-- Deployment Link -->
-        <a href="https://silvi-player.vercel.app/" target="_blank" class="project-deployed-link">Vercel
-          Deployment -></a>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">HTML5</h1>
+            </div>
 
-    <!-- 1st Project -->
-    <div class="project-card">
-      <img src="https://user-images.githubusercontent.com/112761880/216757970-90afd868-cfb8-4b05-bb80-a590001f8366.jpg"
-        alt="Yummy Pizza" />
-      <h2 class="project-title">Yummy Pizza</h2>
-      <p class="project-description">
-        It is a Pizza ordering website where customers can buy different
-        categories of pizza's.
-      </p>
-      <br /><br />
-      <p class="project-tech-stack">
-        <span>Tech Stack Used</span> HTML | CSS | JavaScript | NodeJS |
-        ExpressJS | MongoDB
-      </p>
-      <br />
-      <hr />
-      <br />
-      <!-- Github Link -->
-      <a target="_blank" href="https://github.com/Ejajkhan613/Yummy-Pizza" class="project-github-link">Github
-        Codebase -></a>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">CSS3</h1>
+            </div>
 
-      <!-- Deployment Link -->
-      <a href="https://yummypizza-delivering-smile.netlify.app/" target="_blank" class="project-deployed-link">Netlify
-        Deployment -></a>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">JavaScript</h1>
+            </div>
 
-    <!-- 2nd Project -->
-    <div class="project-card">
-      <img src="https://user-images.githubusercontent.com/112761880/216783766-ba92a3c3-b661-4c2c-838d-ed74f20fe5c0.jpg"
-        alt="Edge Tech" />
-      <br />
-      <h2 class="project-title">Edge Tech</h2>
-      <p class="project-description">
-        It is a CRM based Web Application where companies can manage their
-        customers. This is a Collaborative Project
-      </p>
-      <br />
-      <p class="project-tech-stack">
-        <span>Tech Stack Used</span> HTML | CSS | JavaScript | Mock API
-      </p>
-      <br />
-      <br />
-      <hr />
-      <br />
-      <!-- Github Link -->
-      <a target="_blank" href="https://github.com/MalikRehan-M/EdgeTech" class="project-github-link">Github
-        Codebase -></a>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">React.js</h1>
+            </div>
 
-      <!-- Deployment Link -->
-      <a href="https://cosmic-sprinkles-6ae42e.netlify.app/" target="_blank" class="project-deployed-link">Netlify
-        Deployment -></a>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    width="180px"
+                    src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Next.js</h1>
+            </div>
 
-    <!-- 3rd Project -->
-    <div class="project-card">
-      <img src="https://user-images.githubusercontent.com/108083768/221502755-1ae9d9a1-070a-4fc2-9d89-a237bfe3ad4b.png"
-        alt="Track It" id="thirdProject" />
-      <br />
-      <h2 class="project-title">Track It</h2>
-      <p class="project-description">
-        It is a Time Tracking application which is used to manage your time, tasks and projects according to your
-        worktime.
-      </p>
-      <br />
-      <p class="project-tech-stack">
-        <span>Tech Stack Used</span> HTML | CSS | JavaScript | NodeJS |
-        ExpressJS | MongoDB
-      </p>
-      <br />
-      <hr />
-      <br />
-      <!-- Github Link -->
-      <a target="_blank" href="https://github.com/manoharmeena123/Track-It" class="project-github-link">Github
-        Codebase -></a>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Tailwind CSS</h1>
+            </div>
 
-      <!-- Deployment Link -->
-      <a href="https://trackit-time-tracker.netlify.app/" target="_blank" class="project-deployed-link">Netlify
-        Deployment -></a>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://www.chartjs.org/media/logo-title.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Chart.js</h1>
+            </div>
+        </div>
 
-    <!-- 4th Project -->
-    <div class="project-card">
-      <img src="https://user-images.githubusercontent.com/112761880/229686303-7dbee180-48d1-4ec7-9cbb-c0a09802c82b.jpg"
-        alt="Legal Assist" />
-      <br />
-      <h2 class="project-title">Legal Assist</h2>
-      <p class="project-description">
-        It is a Legal Appointment Booking System, which is used by users to book lawyers for legal assistance and
-        judicial work.
-      </p>
-      <br />
-      <p class="project-tech-stack">
-        <span>Tech Stack Used</span> HTML | CSS | JavaScript | NodeJS | ExpressJS | MongoDB
-      </p>
-      <br />
-      <hr />
-      <br />
-      <!-- Github Link -->
-      <a target="_blank" href="https://github.com/Krishna-7777/Legal-Assist" class="project-github-link">Github
-        Codebase -></a>
+        <!-- Backend -->
+        <br /><br />
+        <h2 id="skills-category">----Backend----</h2>
+        <div id="skillsBackend">
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Node.js</h1>
+            </div>
 
-      <!-- Deployment Link -->
-      <a href="https://legalassist.netlify.app/" target="_blank" class="project-deployed-link">Netlify Deployment -></a>
-    </div>
-  </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Express.js</h1>
+            </div>
 
-  <!-- Stats Section -->
-  <div id="stats">
-    <h1 id="stats-title">Stats</h1>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">MongoDB</h1>
+            </div>
 
-    <div id="github-top-langs"
-      src="https://github-readme-stats.vercel.app/api/top-langs?username=Ejajkhan613Ejajkhan613">
-      <p align="center">
-        <img align="center"
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=Ejajkhan613&show_icons=true&locale=en&layout=compact"
-          alt="Ejajkhan613" />
-      </p>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">MySQL</h1>
+            </div>
 
-    <div id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Ejajkhan613Ejajkhan613">
-      <p align="center">
-        &nbsp;<img align="center"
-          src="https://github-readme-stats.vercel.app/api?username=Ejajkhan613&show_icons=true&locale=en"
-          alt="Ejajkhan613" />
-      </p>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">PostgreSQL</h1>
+            </div>
 
-    <div id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Ejajkhan613">
-      <p align="center">
-        <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Ejajkhan613&theme=prussian"
-          alt="Ejajkhan613" />
-      </p>
-    </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Kafka</h1>
+            </div>
 
-    <div class="calendar react-activity-calendar">
-      <!-- Loading stuff -->
-      Loading the data just for you.
-    </div>
-  </div>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">RabbitMQ</h1>
+            </div>
+        </div>
 
-  <!-- Contacts Section -->
-  <div id="contact">
-    <h1>Contact Details</h1>
-    <a href="https://github.com/Ejajkhan613" target="_blank" id="contact-github"><button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-        </svg>
-        Ejajul_Ansari
-      </button></a>
-    <a href="https://www.linkedin.com/in/ejajul-ansari" target="_blank" id="contact-linkedin"><button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-          viewBox="0 0 16 16">
-          <path
-            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-        </svg>
-        Ejajul_Ansari
-      </button></a>
-    <a href="tel:+919891640628" id="contact-phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-        fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-        <path
-          d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-      </svg>
-      9891640628</a>
-    <a href="mailto:ejajul.masai@gmail.com" id="contact-email"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-        height="16" fill="currentColor" class="bi bi-envelope-paper" viewBox="0 0 16 16">
-        <path
-          d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z" />
-      </svg>
-      ejajul.masai@gmail.com</a>
-  </div>
+        <!-- Tools -->
+        <br /><br />
+        <h2 id="skills-category">----Tools & Technologies----</h2>
+        <div id="skillsAdditional">
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Docker</h1>
+            </div>
 
-  <!-- For auto Typing -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Git</h1>
+            </div>
 
-  <!-- For Github Calender -->
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <script src="./index.js"></script>
-</body>
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Postman</h1>
+            </div>
 
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Heroku</h1>
+            </div>
+
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Linux</h1>
+            </div>
+
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">Python</h1>
+            </div>
+
+            <div class="skills-card">
+                <img
+                    height="180px"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                    class="skills-card-img"
+                />
+                <h1 class="skills-card-name">TypeScript</h1>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <hr />
+        <div id="projects">
+            <div id="makeTop">
+                <h1 id="project-title">Checkout My Projects</h1>
+            </div>
+
+            <div class="project-card">
+                <img src="./photos/silvi-player.jpg" alt="Silvi Player" />
+                <h2 class="project-title">Silvi Player</h2>
+                <p class="project-description">
+                    It is designed for students and self-learners, enabling
+                    quicker learning through reduced video durations.
+                </p>
+                <br />
+                <p class="project-tech-stack">
+                    <span>Tech Stack Used</span> ReactJS | NodeJS | JavaScript |
+                    JavaScript Web Audio API
+                    <br />
+                    <br />
+                </p>
+
+                <hr />
+                <br />
+                <!-- Github Link -->
+                <a
+                    target="_blank"
+                    href="https://github.com/Ejajkhan613/silvi-player"
+                    class="project-github-link"
+                    >Github Codebase -></a
+                >
+
+                <!-- Deployment Link -->
+                <a
+                    href="https://silvi-player.vercel.app/"
+                    target="_blank"
+                    class="project-deployed-link"
+                    >Vercel Deployment -></a
+                >
+            </div>
+
+            <!-- 1st Project -->
+            <div class="project-card">
+                <img
+                    src="https://user-images.githubusercontent.com/112761880/216757970-90afd868-cfb8-4b05-bb80-a590001f8366.jpg"
+                    alt="Yummy Pizza"
+                />
+                <h2 class="project-title">Yummy Pizza</h2>
+                <p class="project-description">
+                    It is a Pizza ordering website where customers can buy
+                    different categories of pizza's.
+                </p>
+                <br /><br />
+                <p class="project-tech-stack">
+                    <span>Tech Stack Used</span> HTML | CSS | JavaScript |
+                    NodeJS | ExpressJS | MongoDB
+                </p>
+                <br />
+                <hr />
+                <br />
+                <!-- Github Link -->
+                <a
+                    target="_blank"
+                    href="https://github.com/Ejajkhan613/Yummy-Pizza"
+                    class="project-github-link"
+                    >Github Codebase -></a
+                >
+
+                <!-- Deployment Link -->
+                <a
+                    href="https://yummypizza-delivering-smile.netlify.app/"
+                    target="_blank"
+                    class="project-deployed-link"
+                    >Netlify Deployment -></a
+                >
+            </div>
+
+            <!-- 2nd Project -->
+            <div class="project-card">
+                <img
+                    src="https://user-images.githubusercontent.com/112761880/216783766-ba92a3c3-b661-4c2c-838d-ed74f20fe5c0.jpg"
+                    alt="Edge Tech"
+                />
+                <br />
+                <h2 class="project-title">Edge Tech</h2>
+                <p class="project-description">
+                    It is a CRM based Web Application where companies can manage
+                    their customers. This is a Collaborative Project
+                </p>
+                <br />
+                <p class="project-tech-stack">
+                    <span>Tech Stack Used</span> HTML | CSS | JavaScript | Mock
+                    API
+                </p>
+                <br />
+                <br />
+                <hr />
+                <br />
+                <!-- Github Link -->
+                <a
+                    target="_blank"
+                    href="https://github.com/MalikRehan-M/EdgeTech"
+                    class="project-github-link"
+                    >Github Codebase -></a
+                >
+
+                <!-- Deployment Link -->
+                <a
+                    href="https://cosmic-sprinkles-6ae42e.netlify.app/"
+                    target="_blank"
+                    class="project-deployed-link"
+                    >Netlify Deployment -></a
+                >
+            </div>
+
+            <!-- 3rd Project -->
+            <div class="project-card">
+                <img
+                    src="https://user-images.githubusercontent.com/108083768/221502755-1ae9d9a1-070a-4fc2-9d89-a237bfe3ad4b.png"
+                    alt="Track It"
+                    id="thirdProject"
+                />
+                <br />
+                <h2 class="project-title">Track It</h2>
+                <p class="project-description">
+                    It is a Time Tracking application which is used to manage
+                    your time, tasks and projects according to your worktime.
+                </p>
+                <br />
+                <p class="project-tech-stack">
+                    <span>Tech Stack Used</span> HTML | CSS | JavaScript |
+                    NodeJS | ExpressJS | MongoDB
+                </p>
+                <br />
+                <hr />
+                <br />
+                <!-- Github Link -->
+                <a
+                    target="_blank"
+                    href="https://github.com/manoharmeena123/Track-It"
+                    class="project-github-link"
+                    >Github Codebase -></a
+                >
+
+                <!-- Deployment Link -->
+                <a
+                    href="https://trackit-time-tracker.netlify.app/"
+                    target="_blank"
+                    class="project-deployed-link"
+                    >Netlify Deployment -></a
+                >
+            </div>
+
+            <!-- 4th Project -->
+            <div class="project-card">
+                <img
+                    src="https://user-images.githubusercontent.com/112761880/229686303-7dbee180-48d1-4ec7-9cbb-c0a09802c82b.jpg"
+                    alt="Legal Assist"
+                />
+                <br />
+                <h2 class="project-title">Legal Assist</h2>
+                <p class="project-description">
+                    It is a Legal Appointment Booking System, which is used by
+                    users to book lawyers for legal assistance and judicial
+                    work.
+                </p>
+                <br />
+                <p class="project-tech-stack">
+                    <span>Tech Stack Used</span> HTML | CSS | JavaScript |
+                    NodeJS | ExpressJS | MongoDB
+                </p>
+                <br />
+                <hr />
+                <br />
+                <!-- Github Link -->
+                <a
+                    target="_blank"
+                    href="https://github.com/Krishna-7777/Legal-Assist"
+                    class="project-github-link"
+                    >Github Codebase -></a
+                >
+
+                <!-- Deployment Link -->
+                <a
+                    href="https://legalassist.netlify.app/"
+                    target="_blank"
+                    class="project-deployed-link"
+                    >Netlify Deployment -></a
+                >
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div id="stats">
+            <h1 id="stats-title">Stats</h1>
+
+            <div
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=Ejajkhan613Ejajkhan613"
+            >
+                <p align="center">
+                    <img
+                        align="center"
+                        src="https://github-readme-stats.vercel.app/api/top-langs?username=Ejajkhan613&show_icons=true&locale=en&layout=compact"
+                        alt="Ejajkhan613"
+                    />
+                </p>
+            </div>
+
+            <div
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=Ejajkhan613Ejajkhan613"
+            >
+                <p align="center">
+                    &nbsp;<img
+                        align="center"
+                        src="https://github-readme-stats.vercel.app/api?username=Ejajkhan613&show_icons=true&locale=en"
+                        alt="Ejajkhan613"
+                    />
+                </p>
+            </div>
+
+            <div
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=Ejajkhan613"
+            >
+                <p align="center">
+                    <img
+                        align="center"
+                        src="https://github-readme-streak-stats.herokuapp.com/?user=Ejajkhan613&theme=prussian"
+                        alt="Ejajkhan613"
+                    />
+                </p>
+            </div>
+
+            <div class="calendar react-activity-calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </div>
+
+        <!-- Contacts Section -->
+        <div id="contact">
+            <h1>Contact Details</h1>
+            <a
+                href="https://github.com/Ejajkhan613"
+                target="_blank"
+                id="contact-github"
+                ><button>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-github"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                        />
+                    </svg>
+                    Ejajul_Ansari
+                </button></a
+            >
+            <a
+                href="https://www.linkedin.com/in/ejajul-ansari"
+                target="_blank"
+                id="contact-linkedin"
+                ><button>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-linkedin"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                        />
+                    </svg>
+                    Ejajul_Ansari
+                </button></a
+            >
+            <a href="tel:+919891640628" id="contact-phone"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-phone"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"
+                    />
+                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+                9891640628</a
+            >
+            <a href="mailto:ejajul.masai@gmail.com" id="contact-email"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-paper"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"
+                    />
+                </svg>
+                ejajul.masai@gmail.com</a
+            >
+        </div>
+
+        <!-- For auto Typing -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- For Github Calender -->
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
 </html>

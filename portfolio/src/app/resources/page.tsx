@@ -27,15 +27,7 @@ export default async function ResourcesPage() {
           <SectionHeading
             eyebrow="Resources"
             title="A small library for my resume, docs, images, and future assets."
-            description="I store resource metadata in MongoDB, while uploaded files live in the local resources folder and are served through the app."
           />
-          <Link
-            href="/admin"
-            className="inline-flex h-12 w-fit items-center gap-2 rounded-full bg-neutral-950 px-5 text-sm font-black text-white transition hover:bg-teal-700 dark:bg-lime-200 dark:text-neutral-950 dark:hover:bg-white"
-          >
-            <Upload className="size-4" />
-            Upload
-          </Link>
         </div>
       </section>
 

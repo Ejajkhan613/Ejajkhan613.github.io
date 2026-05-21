@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f7f6f0;
+  --foreground: #171713;
+  --surface: #ffffff;
+  --surface-glass: rgba(255, 255, 255, 0.78);
+  --muted: #66635a;
+  --line: rgba(23, 23, 19, 0.12);
+  color-scheme: light;
+}
+
+.dark {
+  --background: #090a08;
+  --foreground: #f6f4ea;
+  --surface: #11130f;
+  --surface-glass: rgba(9, 10, 8, 0.78);
+  --muted: #aaa698;
+  --line: rgba(255, 255, 255, 0.12);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  min-width: 320px;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #ccfbf1;
+  color: #0f172a;
+}
+
+.dark ::selection {
+  background: #d9f99d;
+  color: #111827;
+}
+
+.noise-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.prose-portfolio {
+  color: rgb(64 64 64);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.dark .prose-portfolio {
+  color: rgb(212 212 212);
+}
+
+.prose-portfolio h1,
+.prose-portfolio h2,
+.prose-portfolio h3 {
+  color: rgb(23 23 23);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.12;
+  margin-top: 2.2em;
+  margin-bottom: 0.7em;
+}
+
+.dark .prose-portfolio h1,
+.dark .prose-portfolio h2,
+.dark .prose-portfolio h3 {
+  color: white;
+}
+
+.prose-portfolio h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+}
+
+.prose-portfolio h2 {
+  font-size: clamp(1.65rem, 4vw, 2.5rem);
+}
+
+.prose-portfolio h3 {
+  font-size: 1.35rem;
+}
+
+.prose-portfolio p,
+.prose-portfolio ul,
+.prose-portfolio ol {
+  margin: 1.15em 0;
+}
+
+.prose-portfolio ul,
+.prose-portfolio ol {
+  padding-left: 1.2rem;
+}
+
+.prose-portfolio li {
+  margin: 0.45em 0;
+}
+
+.prose-portfolio a {
+  color: #0f766e;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.22em;
+}
+
+.dark .prose-portfolio a {
+  color: #bef264;
+}
+
+.prose-portfolio blockquote {
+  border-left: 4px solid #0f766e;
+  color: rgb(82 82 82);
+  margin: 1.8rem 0;
+  padding-left: 1rem;
+}
+
+.dark .prose-portfolio blockquote {
+  border-left-color: #bef264;
+  color: rgb(212 212 212);
+}
+
+.prose-portfolio code {
+  border-radius: 0.5rem;
+  background: rgba(15, 118, 110, 0.1);
+  color: #115e59;
+  font-size: 0.9em;
+  padding: 0.2rem 0.4rem;
+}
+
+.dark .prose-portfolio code {
+  background: rgba(190, 242, 100, 0.12);
+  color: #d9f99d;
+}
+
+.prose-portfolio pre {
+  overflow-x: auto;
+  border-radius: 1.25rem;
+  background: #111827;
+  color: #f9fafb;
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+}
+
+.prose-portfolio pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}

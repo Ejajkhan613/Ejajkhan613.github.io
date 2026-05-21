@@ -49,9 +49,6 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
         <h1 className="mt-6 text-3xl font-black tracking-tight text-neutral-950 dark:text-white">
           Admin login
         </h1>
-        <p className="mt-3 text-sm leading-7 text-neutral-600 dark:text-neutral-300">
-          Use this area to publish blog posts and manage resources.
-        </p>
 
         {params.error ? (
           <p className="mt-5 rounded-2xl bg-red-50 px-4 py-3 text-sm font-bold text-red-700 dark:bg-red-500/10 dark:text-red-200">

@@ -50,16 +50,6 @@ export default async function SignupPage({ searchParams }: SignupPageProps) {
         <h1 className="mt-6 text-3xl font-black tracking-tight text-neutral-950 dark:text-white">
           Admin signup
         </h1>
-        <p className="mt-3 text-sm leading-7 text-neutral-600 dark:text-neutral-300">
-          The first admin account can be created directly. After that, signup
-          requires the `ADMIN_SIGNUP_CODE` from `.env.local`.
-        </p>
-
-        {!status.mongoReady ? (
-          <p className="mt-5 rounded-2xl bg-amber-50 px-4 py-3 text-sm font-bold text-amber-800 dark:bg-amber-300/10 dark:text-amber-100">
-            Set `MONGODB_URI` before creating an admin account.
-          </p>
-        ) : null}
 
         {params.error ? (
           <p className="mt-5 rounded-2xl bg-red-50 px-4 py-3 text-sm font-bold text-red-700 dark:bg-red-500/10 dark:text-red-200">
